@@ -163,7 +163,10 @@ public class Bank {
 
     public void giveHotelToPlayer(Player player, PlotPropertyCard propertyCard, Integer no)
     {
-        player.setPlayerCash(-propertyCard.getHotelCost()*no);
-        bankMoney+=propertyCard.getHotelCost()*no;
+        if ( player.getPlayerCash() >= propertyCard.getHotelCost()*no)
+        {
+            player.setPlayerCash(-propertyCard.getHotelCost()*no);
+            bankMoney+=propertyCard.getHotelCost()*no;
+        }
     }
 }

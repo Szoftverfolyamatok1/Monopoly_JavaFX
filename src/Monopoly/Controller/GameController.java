@@ -492,7 +492,7 @@ public class GameController {
                 }
             }
 
-            if(propertyCard!=null)
+            if(propertyCard!=null && canBuyHotel(propertyCard))
             {
                 Integer no;
                 if(colour_type== PlotPropertyCard.Colour_Type.BROWN || colour_type== PlotPropertyCard.Colour_Type.BLUE)
@@ -506,10 +506,15 @@ public class GameController {
                         bank.giveHotelToPlayer(playerList.get(0),propertyCard,no);
                     else
                         bank.giveHotelToPlayer(playerList.get(getPlayerCounter_CheckForOrderValidity()),propertyCard,no);
+                    doLog(Level.INFO, "Hotelt vett a " + colour_type + " színű mezőre");
                 }
             }
-            doLog(Level.INFO, "Hotelt vett a " + colour_type + " színű mezőre");
         }
+    }
+
+    private boolean canBuyHotel(PlotPropertyCard propertyCard)
+    {
+        return playerList.get(getPlayerCounter_CheckForOrderValidity()).getPlayerCash() > propertyCard.getHotelCost();
     }
 
     public void buyHotelAIPlayer()

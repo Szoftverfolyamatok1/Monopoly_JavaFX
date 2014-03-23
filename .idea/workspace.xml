@@ -3,57 +3,13 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/Monopoly/Controller/ViewController.java" line="530" />
     <bookmark url="file://$PROJECT_DIR$/src/Monopoly/Controller/ViewController.java" line="988" />
-    <bookmark url="file://$PROJECT_DIR$/src/Monopoly/Controller/GameController.java" line="650" />
+    <bookmark url="file://$PROJECT_DIR$/src/Monopoly/Controller/GameController.java" line="655" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Init commit">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Players/AIPlayer.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Players/AIPlayer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Objects/Bank.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Objects/Bank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Benjamin.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Benjamin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Objects/BoardElement.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Objects/BoardElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XML/BoardElements.xml" afterPath="$PROJECT_DIR$/XML/BoardElements.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Cards/Card.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Cards/Card.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Controller/CardController.java" afterPath="$PROJECT_DIR$/src/Monopoly/Controller/CardController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Cards/ChanceCard.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Cards/ChanceCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Cards/CommunityChestCard.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Cards/CommunityChestCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XML/CommunityChestCards.xml" afterPath="$PROJECT_DIR$/XML/CommunityChestCards.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/ControlLog.log" afterPath="$PROJECT_DIR$/Log/ControlLog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Objects/Dices.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Objects/Dices.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Controller/GameController.java" afterPath="$PROJECT_DIR$/src/Monopoly/Controller/GameController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Players/HumanPlayer.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Players/HumanPlayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObject.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectBank.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectBank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectBankProperty.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectBankProperty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectCard.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectPlayer.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectPlayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectProperty.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectProperty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Logger.java" afterPath="$PROJECT_DIR$/src/Monopoly/Logger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Main.java" afterPath="$PROJECT_DIR$/src/Monopoly/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MonopolyGame_JavaFX.iml" afterPath="$PROJECT_DIR$/MonopolyGame_JavaFX.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Players/Player.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Players/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Cards/PlotPropertyCard.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Cards/PlotPropertyCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Cards/PropertyCard.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Cards/PropertyCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XML/PropertyCards.xml" afterPath="$PROJECT_DIR$/XML/PropertyCards.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Cards/RailingPropertyCard.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Cards/RailingPropertyCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Test/TestClass.java" afterPath="$PROJECT_DIR$/src/Monopoly/Test/TestClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Cards/UtilityPropertyCard.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Cards/UtilityPropertyCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Controller/ViewController.java" afterPath="$PROJECT_DIR$/src/Monopoly/Controller/ViewController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/XML/XMLParser.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/XML/XMLParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/XML/XMLWriter.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/XML/XMLWriter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/card.css" afterPath="$PROJECT_DIR$/src/Monopoly/card.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/description.html" afterPath="$PROJECT_DIR$/.idea/description.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/style.css" afterPath="$PROJECT_DIR$/src/Monopoly/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -130,21 +86,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/Monopoly/Controller/GameController.java" line="461" class="Monopoly.Controller.GameController" package="Monopoly.Controller">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/Monopoly/Controller/ViewController.java" line="202" class="Monopoly.Controller.ViewController" package="Monopoly.Controller">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -179,34 +120,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoadObjectBankProperty.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectBankProperty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="5" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="544">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlotPropertyCard.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Cards/PlotPropertyCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="0" selection-start="2899" selection-end="2899" vertical-scroll-proportion="0.0" vertical-offset="2074" max-vertical-offset="2584">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ViewController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Monopoly/Controller/ViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="535" column="0" selection-start="18936" selection-end="18936" vertical-scroll-proportion="0.8091873" vertical-offset="7617" max-vertical-offset="17782">
-              <folding>
-                <element signature="e#3456#3605#0" expanded="true" />
-                <element signature="e#3599#3600#0" expanded="true" />
-                <element signature="e#3709#3836#0" expanded="true" />
-                <element signature="e#3834#3835#0" expanded="true" />
-              </folding>
+            <state line="616" column="52" selection-start="21680" selection-end="21680" vertical-scroll-proportion="0.0" vertical-offset="9282" max-vertical-offset="17731">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bank.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Objects/Bank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="167" column="25" selection-start="5614" selection-end="5614" vertical-scroll-proportion="0.74550897" vertical-offset="2120" max-vertical-offset="2805">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MonopolyGame_JavaFX.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MonopolyGame_JavaFX.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Monopoly_JavaFX.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Monopoly_JavaFX.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -214,7 +159,7 @@
       <file leaf-file-name="Logger.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Monopoly/Logger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="629">
+            <state line="31" column="0" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -223,7 +168,7 @@
       <file leaf-file-name="HumanPlayer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Players/HumanPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+            <state line="15" column="0" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="493">
               <folding />
             </state>
           </provider>
@@ -232,7 +177,7 @@
       <file leaf-file-name="AIPlayer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Players/AIPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="7361">
+            <state line="25" column="0" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="7480">
               <folding />
             </state>
           </provider>
@@ -241,30 +186,8 @@
       <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Players/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="215" column="0" selection-start="5803" selection-end="5803" vertical-scroll-proportion="0.0" vertical-offset="3099" max-vertical-offset="4199">
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2266#2267#0" expanded="false" />
-                <element signature="e#2290#2291#0" expanded="false" />
-                <element signature="e#2907#2908#0" expanded="false" />
-                <element signature="e#2944#2945#0" expanded="false" />
-                <element signature="e#2998#2999#0" expanded="false" />
-                <element signature="e#3038#3039#0" expanded="false" />
-                <element signature="e#5057#5058#0" expanded="false" />
-                <element signature="e#5091#5092#0" expanded="false" />
-                <element signature="e#5295#5296#0" expanded="false" />
-                <element signature="e#5330#5331#0" expanded="false" />
-                <element signature="e#5403#5404#0" expanded="false" />
-                <element signature="e#5460#5461#0" expanded="false" />
-                <element signature="e#5581#5582#0" expanded="false" />
-                <element signature="e#5605#5606#0" expanded="false" />
-                <element signature="e#6681#6682#0" expanded="false" />
-                <element signature="e#6713#6714#0" expanded="false" />
-                <element signature="e#6755#6756#0" expanded="false" />
-                <element signature="e#6783#6784#0" expanded="false" />
-                <element signature="e#6917#6918#0" expanded="false" />
-                <element signature="e#6947#6948#0" expanded="false" />
-              </folding>
+            <state line="215" column="0" selection-start="5803" selection-end="5803" vertical-scroll-proportion="0.0" vertical-offset="3655" max-vertical-offset="4709">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -272,7 +195,7 @@
       <file leaf-file-name="Dices.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Objects/Dices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+            <state line="8" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -331,9 +254,9 @@
         <option value="$PROJECT_DIR$/src/Monopoly/Model/Players/Player.java" />
         <option value="$PROJECT_DIR$/src/Monopoly/Model/XML/XMLParser.java" />
         <option value="$PROJECT_DIR$/src/Monopoly/Model/XML/XMLWriter.java" />
+        <option value="$PROJECT_DIR$/src/Monopoly/Controller/ViewController.java" />
         <option value="$PROJECT_DIR$/src/Monopoly/Controller/GameController.java" />
         <option value="$PROJECT_DIR$/src/Monopoly/Model/Objects/Bank.java" />
-        <option value="$PROJECT_DIR$/src/Monopoly/Controller/ViewController.java" />
       </list>
     </option>
   </component>
@@ -412,32 +335,31 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Monopoly_JavaFX" />
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Monopoly_JavaFX" />
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Monopoly_JavaFX" />
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Monopoly_JavaFX" />
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Monopoly_JavaFX" />
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -447,11 +369,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Monopoly_JavaFX" />
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Monopoly_JavaFX" />
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -463,9 +385,80 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Monopoly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Monopoly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cards" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Monopoly_JavaFX_stable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Monopoly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -478,7 +471,7 @@
     <property name="options.lastSelected" value="settings.github" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Monopoly végleges másolata/Monopoly_JavaFX" />
+    <property name="last_opened_file_path" value="E:/Monopoly végleges másolata/Monopoly_JavaFX" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -909,7 +902,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32852387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23145072" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -918,14 +911,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263041" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976973" sideWeight="0.6771463" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31742507" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19808307" sideWeight="0.5065243" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.7141163" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1629393" sideWeight="0.8137584" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.281909" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28138527" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="76" y="282" width="1092" height="800" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -935,6 +927,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.8137584" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26859045" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31672204" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -999,20 +992,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Cards/PropertyCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1139">
-          <folding>
-            <element signature="e#913#914#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Cards/RailingPropertyCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="952" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Controller/GameController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="307" column="30" selection-start="10101" selection-end="10101" vertical-scroll-proportion="0.0" vertical-offset="5219" max-vertical-offset="12308">
@@ -1134,11 +1113,6 @@
         <state line="29" column="5" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Log/ControlLog.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="2704" selection-end="2704" vertical-scroll-proportion="-0.20353982" vertical-offset="1022" max-vertical-offset="8466" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="35" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
@@ -1172,16 +1146,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
+        <state line="9" column="13" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectBank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="9" column="13" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/XML/PropertyCards.xml">
@@ -1193,9 +1163,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/LoadObjects/LoadObjectBankProperty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
+        <state line="20" column="5" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Cards/PropertyCard.java">
@@ -1242,9 +1210,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/XML/XMLParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="29" selection-start="763" selection-end="763" vertical-scroll-proportion="-0.49066213" vertical-offset="459" max-vertical-offset="5984">
-          <folding />
-        </state>
+        <state line="27" column="29" selection-start="763" selection-end="763" vertical-scroll-proportion="-0.49066213" vertical-offset="459" max-vertical-offset="5984" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Controller/CardController.java">
@@ -1256,9 +1222,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="743" column="0" selection-start="27685" selection-end="27685" vertical-scroll-proportion="0.2582857" vertical-offset="11776" max-vertical-offset="34238">
-          <folding />
-        </state>
+        <state line="743" column="0" selection-start="27685" selection-end="27685" vertical-scroll-proportion="0.2582857" vertical-offset="11776" max-vertical-offset="34238" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Players/HumanPlayer.java">
@@ -1285,35 +1249,6 @@
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Players/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="215" column="0" selection-start="5803" selection-end="5803" vertical-scroll-proportion="0.0" vertical-offset="3099" max-vertical-offset="4199">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2266#2267#0" expanded="false" />
-            <element signature="e#2290#2291#0" expanded="false" />
-            <element signature="e#2907#2908#0" expanded="false" />
-            <element signature="e#2944#2945#0" expanded="false" />
-            <element signature="e#2998#2999#0" expanded="false" />
-            <element signature="e#3038#3039#0" expanded="false" />
-            <element signature="e#5057#5058#0" expanded="false" />
-            <element signature="e#5091#5092#0" expanded="false" />
-            <element signature="e#5295#5296#0" expanded="false" />
-            <element signature="e#5330#5331#0" expanded="false" />
-            <element signature="e#5403#5404#0" expanded="false" />
-            <element signature="e#5460#5461#0" expanded="false" />
-            <element signature="e#5581#5582#0" expanded="false" />
-            <element signature="e#5605#5606#0" expanded="false" />
-            <element signature="e#6681#6682#0" expanded="false" />
-            <element signature="e#6713#6714#0" expanded="false" />
-            <element signature="e#6755#6756#0" expanded="false" />
-            <element signature="e#6783#6784#0" expanded="false" />
-            <element signature="e#6917#6918#0" expanded="false" />
-            <element signature="e#6947#6948#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Objects/Bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.33277592" vertical-offset="481" max-vertical-offset="2754">
           <folding />
         </state>
       </provider>
@@ -1325,31 +1260,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Monopoly/Controller/GameController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/jre/lib/jfxrt.jar!/javafx/scene/Node.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="0" selection-start="3064" selection-end="3064" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="12495">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="953" column="55" selection-start="46982" selection-end="46982" vertical-scroll-proportion="0.33333334" vertical-offset="15989" max-vertical-offset="22797" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Log/ControlLog.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="2513" selection-end="2513" vertical-scroll-proportion="0.029310346" vertical-offset="867" max-vertical-offset="5712" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Monopoly_JavaFX.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/jre/lib/jfxrt.jar!/javafx/scene/Node.class">
+    <entry file="file://$PROJECT_DIR$/MonopolyGame_JavaFX.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="953" column="55" selection-start="46982" selection-end="46982" vertical-scroll-proportion="0.33333334" vertical-offset="15989" max-vertical-offset="22797">
+        <state line="20" column="0" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Controller/ViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="535" column="0" selection-start="18936" selection-end="18936" vertical-scroll-proportion="0.8091873" vertical-offset="7617" max-vertical-offset="17782">
+        <state line="616" column="52" selection-start="21680" selection-end="21680" vertical-scroll-proportion="0.0" vertical-offset="9282" max-vertical-offset="17731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Monopoly/Controller/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="505" column="42" selection-start="18255" selection-end="18255" vertical-scroll-proportion="0.5643712" vertical-offset="8208" max-vertical-offset="12580">
           <folding>
-            <element signature="e#3456#3605#0" expanded="true" />
-            <element signature="e#3599#3600#0" expanded="true" />
-            <element signature="e#3709#3836#0" expanded="true" />
-            <element signature="e#3834#3835#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/Objects/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="25" selection-start="5614" selection-end="5614" vertical-scroll-proportion="0.74550897" vertical-offset="2120" max-vertical-offset="2805">
+          <folding />
         </state>
       </provider>
     </entry>
