@@ -7,9 +7,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/Monopoly/Controller/GameController.java" line="650" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Monopoly_JavaFX.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Init commit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Players/AIPlayer.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Players/AIPlayer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/Model/Objects/Bank.java" afterPath="$PROJECT_DIR$/src/Monopoly/Model/Objects/Bank.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Benjamin.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Benjamin.xml" />
@@ -57,6 +55,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monopoly/style.css" afterPath="$PROJECT_DIR$/src/Monopoly/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -157,10 +156,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="XMLWriter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="XMLWriter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/XML/XMLWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="26" selection-start="6184" selection-end="6184" vertical-scroll-proportion="0.32" vertical-offset="2338" max-vertical-offset="3213">
+            <state line="167" column="0" selection-start="5921" selection-end="5921" vertical-scroll-proportion="0.0" vertical-offset="2338" max-vertical-offset="3213">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XMLParser.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/XML/XMLParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="29" selection-start="763" selection-end="763" vertical-scroll-proportion="0.29411766" vertical-offset="0" max-vertical-offset="5984">
               <folding />
             </state>
           </provider>
@@ -883,7 +891,11 @@
       <created>1395597480855</created>
       <updated>1395597480855</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Init commit">
+      <created>1395599002288</created>
+      <updated>1395599002288</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -911,10 +923,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32963374" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1211,17 +1223,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/XML/XMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="314" column="89" selection-start="12901" selection-end="12901" vertical-scroll-proportion="0.0" vertical-offset="5010" max-vertical-offset="6273">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#12303#12323#0" expanded="false" />
-            <element signature="e#12882#12898#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="16" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
@@ -1406,7 +1407,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/XML/XMLWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="26" selection-start="6184" selection-end="6184" vertical-scroll-proportion="0.32" vertical-offset="2338" max-vertical-offset="3213">
+        <state line="167" column="0" selection-start="5921" selection-end="5921" vertical-scroll-proportion="0.0" vertical-offset="2338" max-vertical-offset="3213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Monopoly/Model/XML/XMLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="29" selection-start="763" selection-end="763" vertical-scroll-proportion="0.29411766" vertical-offset="0" max-vertical-offset="5984">
           <folding />
         </state>
       </provider>

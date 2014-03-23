@@ -1,0 +1,143 @@
+root {
+    display: block;
+}
+
+#main {
+    -fx-background-image:url("Images/main.jpg");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+#communityChest{
+    -fx-background-image:url("Images/card.jpg");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+#board
+{
+    -fx-background-image:url("Images/board.jpg");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#info
+{
+    -fx-background-image:url("Images/info.jpg");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#settings
+{
+    -fx-background-image:url("Images/settings.jpg");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#help
+{
+    -fx-background-image:url("Images/help.jpg");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#fig1
+{
+    -fx-background-image:url("Images/fig1.png");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#fig2
+{
+    -fx-background-image:url("Images/fig2.png");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#fig3
+{
+    -fx-background-image:url("Images/fig3.png");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#fig4
+{
+    -fx-background-image:url("Images/fig4.png");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#fig5
+{
+    -fx-background-image:url("Images/fig5.png");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#fig6
+{
+    -fx-background-image:url("Images/fig6.png");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#fig7
+{
+    -fx-background-image:url("Images/fig7.png");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#fig8
+{
+    -fx-background-image:url("Images/fig8.png");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#dice
+{
+    -fx-background-image:url("Images/dice.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#base
+{
+    -fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+
+#prop
+{
+    -fx-background-image:url("Images/propback.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+#propbacksmall
+{
+    -fx-background-image:url("Images/propbacksmall.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
+#railproppic
+{
+     -fx-background-image:url("Images/railroad.jpg");
+     -fx-background-repeat: stretch;
+     -fx-background-size: contain;
+}
+
+#propbutton
+{
+    -fx-background-color: rgb(126,197,241);
+    -fx-border-radius: 0pt;
+    -fx-border-width: 4pt;
+    -fx-border-color: black;
+    -fx-font: bold 16pt;
+    -fx-alignment: CENTER;
+}
+#communitylabel
+{
+    -fx-font: bold 16pt Arial;
+}

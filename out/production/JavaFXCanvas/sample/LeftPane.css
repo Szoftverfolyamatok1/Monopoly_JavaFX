@@ -1,0 +1,9 @@
+root {
+    display: block;
+}
+
+#pane {
+	-fx-background-image: url("mBoard.jpg");
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain
+}

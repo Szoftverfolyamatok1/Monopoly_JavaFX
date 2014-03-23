@@ -1,0 +1,9 @@
+root {
+    display: block;
+}
+
+#pane {
+    -fx-background-color: #333333;
+	-fx-background-repeat: stretch;
+    -fx-background-size: contain;
+}
