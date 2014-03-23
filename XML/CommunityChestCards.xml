@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<communitychest>
+    <element id="1">
+        <name>chest_1</name>
+        <description>Advance to Go, COLLECT $200</description>
+        <type>ADVANCE_SPECIFIC_RICH</type>
+        <amount>200</amount>
+    </element>
+    <element id="2">
+        <name>chest_2</name>
+        <description>Bank error in your favour, collect $200</description>
+        <type>GET</type>
+        <amount>200</amount>
+    </element>
+    <element id="3">
+        <name>chest_3</name>
+        <description>Life insurance matures, collect $100</description>
+        <type>GET</type>
+        <amount>100</amount>
+    </element>
+    <element id="4">
+        <name>chest_4</name>
+        <description>Income tax refound, collect $20</description>
+        <type>GET</type>
+        <amount>20</amount>
+    </element>
+    <element id="5">
+        <name>chest_5</name>
+        <description>You inherit $100</description>
+        <type>GET</type>
+        <amount>100</amount>
+    </element>
+    <element id="6">
+        <name>chest_6</name>
+        <description>Pay hospital $100</description>
+        <type>PAY</type>
+        <amount>100</amount>
+    </element>
+    <element id="7">
+        <name>chest_7</name>
+        <description>XMas fund matures, collect $100</description>
+        <type>GET</type>
+        <amount>100</amount>
+    </element>
+    <element id="8">
+        <name>chest_8</name>
+        <description>Doctor’s fee, pay $50</description>
+        <type>PAY</type>
+        <amount>50</amount>
+    </element>
+    <element id="9">
+        <name>chest_9</name>
+        <description>Pay school tax of $150</description>
+        <type>PAY</type>
+        <amount>150</amount>
+    </element>
+    <element id="10">
+        <name>chest_10</name>
+        <description>Go directly to jail. Do not pass go, do not collect $200</description>
+        <type>ADVANCE_SPECIFIC_POOR</type>
+        <amount>0</amount>
+    </element>
+    <element id="11">
+        <name>chest_11</name>
+        <description>You have won second prize in a beauty contest, collect $10</description>
+        <type>GET</type>
+        <amount>10</amount>
+    </element>
+    <element id="12">
+        <name>chest_12</name>
+        <description>From sale of stock you get $45</description>
+        <type>GET</type>
+        <amount>45</amount>
+    </element>
+    <element id="13">
+        <name>chest_13</name>
+        <description>Get out of jail, free</description>
+        <type>OUT_OF_JAIL</type>
+        <amount>0</amount>
+    </element>
+    <element id="14">
+        <name>chest_14</name>
+        <description>Receive for services $25</description>
+        <type>GET</type>
+        <amount>25</amount>
+    </element>
+</communitychest>

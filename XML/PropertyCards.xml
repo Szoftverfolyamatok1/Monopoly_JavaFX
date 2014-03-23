@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<property>
+    <element id="1">
+        <name>Electric Company</name>
+        <type>UTILITY</type>
+        <cost>150</cost>
+        <mortgageValue>75</mortgageValue>
+        <rentalValue1>4</rentalValue1>
+        <rentalValue2>10</rentalValue2>
+    </element>
+    <element id="2">
+        <name>Water works</name>
+        <type>UTILITY</type>
+        <cost>150</cost>
+        <mortgageValue>75</mortgageValue>
+        <rentalValue1>4</rentalValue1>
+        <rentalValue2>10</rentalValue2>
+    </element>
+    <element id="3">
+        <name>Reading Railroad</name>
+        <type>RAILING</type>
+        <cost>200</cost>
+        <mortgageValue>100</mortgageValue>
+        <rentalValue1>25</rentalValue1>
+        <rentalValue2>50</rentalValue2>
+        <rentalValue3>100</rentalValue3>
+        <rentalValue4>200</rentalValue4>
+        <mortgageValue>100</mortgageValue>
+    </element>
+    <element id="4">
+        <name>Pennsylvania Railroad</name>
+        <type>RAILING</type>
+        <cost>200</cost>
+        <mortgageValue>100</mortgageValue>
+        <rentalValue1>25</rentalValue1>
+        <rentalValue2>50</rentalValue2>
+        <rentalValue3>100</rentalValue3>
+        <rentalValue4>200</rentalValue4>
+        <mortgageValue>100</mortgageValue>
+    </element>
+    <element id="5">
+        <name>B and O Railroad</name>
+        <type>RAILING</type>
+        <cost>200</cost>
+        <mortgageValue>100</mortgageValue>
+        <rentalValue1>25</rentalValue1>
+        <rentalValue2>50</rentalValue2>
+        <rentalValue3>100</rentalValue3>
+        <rentalValue4>200</rentalValue4>
+        <mortgageValue>100</mortgageValue>
+    </element>
+    <element id="6">
+        <name>Short Line</name>
+        <type>RAILING</type>
+        <cost>200</cost>
+        <mortgageValue>100</mortgageValue>
+        <rentalValue1>25</rentalValue1>
+        <rentalValue2>50</rentalValue2>
+        <rentalValue3>100</rentalValue3>
+        <rentalValue4>200</rentalValue4>
+        <mortgageValue>100</mortgageValue>
+    </element>
+    <element id="7">
+        <name>Mediterranean Avenue</name>
+        <type>SIMPLE</type>
+        <colour>BROWN</colour>
+        <cost>60</cost>
+        <rentalValue0>2</rentalValue0>
+        <rentalValue1>10</rentalValue1>
+        <rentalValue2>30</rentalValue2>
+        <rentalValue3>90</rentalValue3>
+        <rentalValue4>160</rentalValue4>
+        <rentalValueHotel>250</rentalValueHotel>
+        <mortgageValue>30</mortgageValue>
+        <houseCost>50</houseCost>
+        <hotelCost>50</hotelCost>
+    </element>
+    <element id="8">
+        <name>Baltic Avenue</name>
+        <type>SIMPLE</type>
+        <colour>BROWN</colour>
+        <cost>60</cost>
+        <rentalValue0>4</rentalValue0>
+        <rentalValue1>20</rentalValue1>
+        <rentalValue2>60</rentalValue2>
+        <rentalValue3>180</rentalValue3>
+        <rentalValue4>320</rentalValue4>
+        <rentalValueHotel>450</rentalValueHotel>
+        <mortgageValue>30</mortgageValue>
+        <houseCost>50</houseCost>
+        <hotelCost>50</hotelCost>
+    </element>
+    <element id="9">
+        <name>Kentucky Avenue</name>
+        <type>SIMPLE</type>
+        <colour>RED</colour>
+        <cost>220</cost>
+        <rentalValue0>18</rentalValue0>
+        <rentalValue1>90</rentalValue1>
+        <rentalValue2>250</rentalValue2>
+        <rentalValue3>700</rentalValue3>
+        <rentalValue4>875</rentalValue4>
+        <rentalValueHotel>1050</rentalValueHotel>
+        <mortgageValue>110</mortgageValue>
+        <houseCost>150</houseCost>
+        <hotelCost>150</hotelCost>
+    </element>
+    <element id="10">
+        <name>Indiana Avenue</name>
+        <type>SIMPLE</type>
+        <colour>RED</colour>
+        <cost>220</cost>
+        <rentalValue0>18</rentalValue0>
+        <rentalValue1>90</rentalValue1>
+        <rentalValue2>250</rentalValue2>
+        <rentalValue3>700</rentalValue3>
+        <rentalValue4>875</rentalValue4>
+        <rentalValueHotel>1050</rentalValueHotel>
+        <mortgageValue>110</mortgageValue>
+        <houseCost>150</houseCost>
+        <hotelCost>150</hotelCost>
+    </element>
+    <element id="11">
+        <name>Illinois Avenue</name>
+        <type>SIMPLE</type>
+        <colour>RED</colour>
+        <cost>240</cost>
+        <rentalValue0>20</rentalValue0>
+        <rentalValue1>100</rentalValue1>
+        <rentalValue2>300</rentalValue2>
+        <rentalValue3>750</rentalValue3>
+        <rentalValue4>925</rentalValue4>
+        <rentalValueHotel>1100</rentalValueHotel>
+        <mortgageValue>120</mortgageValue>
+        <houseCost>150</houseCost>
+        <hotelCost>150</hotelCost>
+    </element>
+    <element id="12">
+        <name>Oriental Avenue</name>
+        <type>SIMPLE</type>
+        <colour>LIGHT_BLUE</colour>
+        <cost>100</cost>
+        <rentalValue0>6</rentalValue0>
+        <rentalValue1>30</rentalValue1>
+        <rentalValue2>90</rentalValue2>
+        <rentalValue3>270</rentalValue3>
+        <rentalValue4>400</rentalValue4>
+        <rentalValueHotel>550</rentalValueHotel>
+        <mortgageValue>50</mortgageValue>
+        <houseCost>50</houseCost>
+        <hotelCost>50</hotelCost>
+    </element>
+    <element id="13">
+        <name>Vermont Avenue</name>
+        <type>SIMPLE</type>
+        <colour>LIGHT_BLUE</colour>
+        <cost>100</cost>
+        <rentalValue0>6</rentalValue0>
+        <rentalValue1>30</rentalValue1>
+        <rentalValue2>90</rentalValue2>
+        <rentalValue3>270</rentalValue3>
+        <rentalValue4>400</rentalValue4>
+        <rentalValueHotel>550</rentalValueHotel>
+        <mortgageValue>50</mortgageValue>
+        <houseCost>50</houseCost>
+        <hotelCost>50</hotelCost>
+    </element>
+    <element id="14">
+        <name>Connecticut Avenue</name>
+        <type>SIMPLE</type>
+        <colour>LIGHT_BLUE</colour>
+        <cost>120</cost>
+        <rentalValue0>8</rentalValue0>
+        <rentalValue1>40</rentalValue1>
+        <rentalValue2>100</rentalValue2>
+        <rentalValue3>300</rentalValue3>
+        <rentalValue4>450</rentalValue4>
+        <rentalValueHotel>600</rentalValueHotel>
+        <mortgageValue>60</mortgageValue>
+        <houseCost>50</houseCost>
+        <hotelCost>50</hotelCost>
+    </element>
+    <element id="15">
+        <name>Atlantic Avenue</name>
+        <type>SIMPLE</type>
+        <colour>YELLOW</colour>
+        <cost>260</cost>
+        <rentalValue0>22</rentalValue0>
+        <rentalValue1>110</rentalValue1>
+        <rentalValue2>330</rentalValue2>
+        <rentalValue3>800</rentalValue3>
+        <rentalValue4>975</rentalValue4>
+        <rentalValueHotel>1150</rentalValueHotel>
+        <mortgageValue>130</mortgageValue>
+        <houseCost>150</houseCost>
+        <hotelCost>150</hotelCost>
+    </element>
+    <element id="16">
+        <name>Ventnor Avenue</name>
+        <type>SIMPLE</type>
+        <colour>YELLOW</colour>
+        <cost>260</cost>
+        <rentalValue0>22</rentalValue0>
+        <rentalValue1>110</rentalValue1>
+        <rentalValue2>330</rentalValue2>
+        <rentalValue3>800</rentalValue3>
+        <rentalValue4>975</rentalValue4>
+        <rentalValueHotel>1150</rentalValueHotel>
+        <mortgageValue>130</mortgageValue>
+        <houseCost>150</houseCost>
+        <hotelCost>150</hotelCost>
+    </element>
+    <element id="17">
+        <name>Marvin Gardens</name>
+        <type>SIMPLE</type>
+        <colour>YELLOW</colour>
+        <cost>280</cost>
+        <rentalValue0>24</rentalValue0>
+        <rentalValue1>120</rentalValue1>
+        <rentalValue2>360</rentalValue2>
+        <rentalValue3>850</rentalValue3>
+        <rentalValue4>1025</rentalValue4>
+        <rentalValueHotel>1200</rentalValueHotel>
+        <mortgageValue>140</mortgageValue>
+        <houseCost>150</houseCost>
+        <hotelCost>150</hotelCost>
+    </element>
+    <element id="18">
+        <name>St. Charles Place</name>
+        <type>SIMPLE</type>
+        <colour>PURPLE</colour>
+        <cost>140</cost>
+        <rentalValue0>10</rentalValue0>
+        <rentalValue1>50</rentalValue1>
+        <rentalValue2>150</rentalValue2>
+        <rentalValue3>450</rentalValue3>
+        <rentalValue4>625</rentalValue4>
+        <rentalValueHotel>750</rentalValueHotel>
+        <mortgageValue>70</mortgageValue>
+        <houseCost>100</houseCost>
+        <hotelCost>100</hotelCost>
+    </element>
+    <element id="19">
+        <name>States Avenue</name>
+        <type>SIMPLE</type>
+        <colour>PURPLE</colour>
+        <cost>140</cost>
+        <rentalValue0>10</rentalValue0>
+        <rentalValue1>50</rentalValue1>
+        <rentalValue2>150</rentalValue2>
+        <rentalValue3>450</rentalValue3>
+        <rentalValue4>625</rentalValue4>
+        <rentalValueHotel>750</rentalValueHotel>
+        <mortgageValue>70</mortgageValue>
+        <houseCost>100</houseCost>
+        <hotelCost>100</hotelCost>
+    </element>
+    <element id="20">
+        <name>Virginia Avenue</name>
+        <type>SIMPLE</type>
+        <colour>PURPLE</colour>
+        <cost>160</cost>
+        <rentalValue0>12</rentalValue0>
+        <rentalValue1>60</rentalValue1>
+        <rentalValue2>180</rentalValue2>
+        <rentalValue3>500</rentalValue3>
+        <rentalValue4>700</rentalValue4>
+        <rentalValueHotel>900</rentalValueHotel>
+        <mortgageValue>80</mortgageValue>
+        <houseCost>100</houseCost>
+        <hotelCost>100</hotelCost>
+    </element>
+    <element id="21">
+        <name>Pacific Avenue</name>
+        <type>SIMPLE</type>
+        <colour>GREEN</colour>
+        <cost>140</cost>
+        <rentalValue0>26</rentalValue0>
+        <rentalValue1>130</rentalValue1>
+        <rentalValue2>390</rentalValue2>
+        <rentalValue3>900</rentalValue3>
+        <rentalValue4>1100</rentalValue4>
+        <rentalValueHotel>1275</rentalValueHotel>
+        <mortgageValue>150</mortgageValue>
+        <houseCost>200</houseCost>
+        <hotelCost>200</hotelCost>
+    </element>
+    <element id="22">
+        <name>North Carolina Avenue</name>
+        <type>SIMPLE</type>
+        <colour>GREEN</colour>
+        <cost>300</cost>
+        <rentalValue0>26</rentalValue0>
+        <rentalValue1>130</rentalValue1>
+        <rentalValue2>390</rentalValue2>
+        <rentalValue3>900</rentalValue3>
+        <rentalValue4>1100</rentalValue4>
+        <rentalValueHotel>1275</rentalValueHotel>
+        <mortgageValue>150</mortgageValue>
+        <houseCost>200</houseCost>
+        <hotelCost>200</hotelCost>
+    </element>
+    <element id="23">
+        <name>Pennsylvania Avenue</name>
+        <type>SIMPLE</type>
+        <colour>GREEN</colour>
+        <cost>320</cost>
+        <rentalValue0>28</rentalValue0>
+        <rentalValue1>150</rentalValue1>
+        <rentalValue2>450</rentalValue2>
+        <rentalValue3>1000</rentalValue3>
+        <rentalValue4>1200</rentalValue4>
+        <rentalValueHotel>1400</rentalValueHotel>
+        <mortgageValue>160</mortgageValue>
+        <houseCost>200</houseCost>
+        <hotelCost>200</hotelCost>
+    </element>
+    <element id="24">
+        <name>St. James Place</name>
+        <type>SIMPLE</type>
+        <colour>ORANGE</colour>
+        <cost>180</cost>
+        <rentalValue0>14</rentalValue0>
+        <rentalValue1>70</rentalValue1>
+        <rentalValue2>200</rentalValue2>
+        <rentalValue3>550</rentalValue3>
+        <rentalValue4>750</rentalValue4>
+        <rentalValueHotel>950</rentalValueHotel>
+        <mortgageValue>90</mortgageValue>
+        <houseCost>100</houseCost>
+        <hotelCost>100</hotelCost>
+    </element>
+    <element id="25">
+        <name>Tennessee Avenue</name>
+        <type>SIMPLE</type>
+        <colour>ORANGE</colour>
+        <cost>180</cost>
+        <rentalValue0>14</rentalValue0>
+        <rentalValue1>70</rentalValue1>
+        <rentalValue2>200</rentalValue2>
+        <rentalValue3>550</rentalValue3>
+        <rentalValue4>750</rentalValue4>
+        <rentalValueHotel>950</rentalValueHotel>
+        <mortgageValue>90</mortgageValue>
+        <houseCost>100</houseCost>
+        <hotelCost>100</hotelCost>
+    </element>
+    <element id="26">
+        <name>New York Avenue</name>
+        <type>SIMPLE</type>
+        <colour>ORANGE</colour>
+        <cost>200</cost>
+        <rentalValue0>16</rentalValue0>
+        <rentalValue1>80</rentalValue1>
+        <rentalValue2>220</rentalValue2>
+        <rentalValue3>600</rentalValue3>
+        <rentalValue4>800</rentalValue4>
+        <rentalValueHotel>1000</rentalValueHotel>
+        <mortgageValue>100</mortgageValue>
+        <houseCost>100</houseCost>
+        <hotelCost>100</hotelCost>
+    </element>
+    <element id="27">
+        <name>Park Place</name>
+        <type>SIMPLE</type>
+        <colour>BLUE</colour>
+        <cost>350</cost>
+        <rentalValue0>35</rentalValue0>
+        <rentalValue1>175</rentalValue1>
+        <rentalValue2>500</rentalValue2>
+        <rentalValue3>1100</rentalValue3>
+        <rentalValue4>1300</rentalValue4>
+        <rentalValueHotel>1500</rentalValueHotel>
+        <mortgageValue>175</mortgageValue>
+        <houseCost>200</houseCost>
+        <hotelCost>200</hotelCost>
+    </element>
+    <element id="28">
+        <name>Boardwalk</name>
+        <type>SIMPLE</type>
+        <colour>BLUE</colour>
+        <cost>400</cost>
+        <rentalValue0>50</rentalValue0>
+        <rentalValue1>200</rentalValue1>
+        <rentalValue2>600</rentalValue2>
+        <rentalValue3>1400</rentalValue3>
+        <rentalValue4>1700</rentalValue4>
+        <rentalValueHotel>2000</rentalValueHotel>
+        <mortgageValue>200</mortgageValue>
+        <houseCost>200</houseCost>
+        <hotelCost>200</hotelCost>
+    </element>
+</property>

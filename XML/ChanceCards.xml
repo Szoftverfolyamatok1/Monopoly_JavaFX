@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<chance>
+    <element id="1">
+        <name>chance_1</name>
+        <description>Get out of jail free</description>
+        <type>OUT_OF_JAIL</type>
+        <amount>0</amount>
+    </element>
+    <element id="2">
+        <name>chance_2</name>
+        <description>Pay poor tax of $15</description>
+        <type>PAY</type>
+        <amount>15</amount>
+    </element>
+    <element id="3">
+        <name>chance_3</name>
+        <description>Bank pays you divident of $50</description>
+        <type>GET</type>
+        <amount>50</amount>
+    </element>
+    <element id="4">
+        <name>chance_4</name>
+        <description>Advance token to the Reading Railroad and pay owner twice the rental to which he is otherwise entitled</description>
+        <type>ADVANCE_SPECIFIC_TWICE</type>
+        <amount>5</amount>
+    </element>
+    <element id="5">
+        <name>chance_5</name>
+        <description>Advance token to Pennsylvania Railroad and pay owner twice the rental to which he is otherwise entitled</description>
+        <type>ADVANCE_SPECIFIC_TWICE</type>
+        <amount>15</amount>
+    </element>
+    <element id="6">
+        <name>chance_6</name>
+        <description>Advance to St. James Place</description>
+        <type>ADVANCE_SPECIFIC</type>
+        <amount>16</amount>
+    </element>
+    <element id="7">
+        <name>chance_7</name>
+        <description>Advance to Illinois Ave</description>
+        <type>ADVANCE_SPECIFIC</type>
+        <amount>24</amount>
+    </element>
+    <element id="8">
+        <name>chance_8</name>
+        <description>Advance to GO, collect $200</description>
+        <type>ADVANCE_SPECIFIC_RICH</type>
+        <amount>200</amount>
+    </element>
+    <element id="9">
+        <name>chance_9</name>
+        <description>Advance token Electric Utility. If owned, pay owner twice the rental to which he is otherwise entitled</description>
+        <type>ADVANCE_SPECIFIC_TWICE</type>
+        <amount>12</amount>
+    </element>
+    <element id="10">
+        <name>chance_10</name>
+        <description>Take a walk to the Boardwalk</description>
+        <type>ADVANCE_SPECIFIC</type>
+        <amount>39</amount>
+    </element>
+    <element id="11">
+        <name>chance_11</name>
+        <description>Get out of jail free</description>
+        <type>OUT_OF_JAIL</type>
+        <amount>0</amount>
+    </element>
+    <element id="12">
+        <name>chance_12</name>
+        <description>Go back 3 spaces</description>
+        <type>ADVANCE_NEGATIVE</type>
+        <amount>3</amount>
+    </element>
+    <element id="13">
+        <name>chance_13</name>
+        <description>Your building and loan matures, collect $150</description>
+        <type>GET</type>
+        <amount>150</amount>
+    </element>
+    <element id="14">
+        <name>chance_14</name>
+        <description>Go directly to jail</description>
+        <type>ADVANCE_SPECIFIC_POOR</type>
+        <amount>0</amount>
+    </element>
+</chance>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
