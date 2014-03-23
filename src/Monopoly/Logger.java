@@ -7,6 +7,7 @@ import java.util.logging.SimpleFormatter;
 
 /**
  * Created by Benjamin on 2014.03.18..
+ * Static logger class which can be used from all over this project
  */
 public class Logger {
     public static class LoggerClass{
