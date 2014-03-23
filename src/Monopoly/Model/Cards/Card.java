@@ -5,7 +5,7 @@ package Monopoly.Model.Cards;
  * Date: 2013.11.11.
  * Time: 13:32
  */
-//Parent class for FieldCard and ChanceCard ( needs workout )
+//Parent class for FieldCard and ChanceCard
 public abstract class Card {
 	public enum Type {	OUT_OF_JAIL
 						,PAY

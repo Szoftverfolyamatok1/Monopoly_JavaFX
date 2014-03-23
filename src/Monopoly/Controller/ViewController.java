@@ -37,7 +37,7 @@ public class ViewController {
     private Stage buildStage;
     private Label communityDescriptionLabel;
     //main menu
-    public Button newGameButton,settingsButton,helpButton,loadButton,exitButton,playerBuyHousesButton,testButton,closeCommunityChest;
+    public Button newGameButton,settingsButton,helpButton,loadButton,exitButton,playerBuyHousesButton,closeCommunityChest;
 
     //game
     public Button dice,ingameHelpButton;
@@ -457,20 +457,8 @@ public class ViewController {
             boardPane.getChildren().add(t);
             j++;
         }
-//        testButton = new Button("Teszt");
-//        testButton.setPrefSize(70,20);
-//        testButton.relocate(200, 90);
-//        testButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
-//                new EventHandler<MouseEvent>() {
-//                    @Override
-//                    public void handle(MouseEvent mouseEvent) {
-////                        game.writeOutPlayersProperties();
-//                        game.buyPropertyForPlayer("Mediterranean Avenue");
-//                        game.buyPropertyForPlayer("Baltic Avenue");
-//                    }
-//                });
-//        testButton.setId("propbutton");
-        boardPane.getChildren().addAll(dice, diceResult,testButton,communityChestPane);
+
+        boardPane.getChildren().addAll(dice, diceResult,communityChestPane);
 		main.getChildren().addAll(boardPane, infoPane, saveButton, backButton, ingameHelpButton);
 		coordLabel.toFront();
 
