@@ -197,7 +197,7 @@ public class GameController {
 					checkPayToPlayer(playerList.get(getPlayerCounter_CheckForOrderValidity()),pc);
 				}
 
-				buy=playerList.get(getPlayerCounter_CheckForOrderValidity()).step(pc,hasPropertyCard(pc));
+				buy=playerList.get(getPlayerCounter_CheckForOrderValidity()).step(pc,hasPropertyCard(pc), getPropertyCardList());
 				buyProperty(name, buy);
 				checkIfPlayerLost(currentPlayer());
 				nextPlayer();
@@ -206,7 +206,7 @@ public class GameController {
 				return new Pair<Boolean,Integer>(buy,currentThrow);
 			}
 
-			buy= playerList.get(getPlayerCounter_CheckForOrderValidity()).step(pc,hasPropertyCard(pc));
+			buy= playerList.get(getPlayerCounter_CheckForOrderValidity()).step(pc,hasPropertyCard(pc),getPropertyCardList());
 			buyProperty(name, buy);
 			return new Pair<Boolean,Integer>(buy,currentThrow);
 		}
@@ -464,7 +464,7 @@ public class GameController {
 
     private void buyHouseAIPlayer()  {   
         AIPlayer aiPlayer= (AIPlayer) playerList.get(getPlayerCounter_CheckForOrderValidity());
-        PlotPropertyCard.Colour_Type colour_type=aiPlayer.makeHouseDecision();
+        PlotPropertyCard.Colour_Type colour_type=aiPlayer.makeHouseDecision(getPropertyCardList());
 
         buyHousePlayer(colour_type,false);
     }
@@ -738,5 +738,10 @@ public class GameController {
 
     public String getLastCommunityCard(){
         return lastCommunityCard;
+    }
+
+    public ArrayList<PropertyCard> getPropertyCardList()
+    {
+        return bank.getPropertyCardList();
     }
 }

@@ -3,7 +3,6 @@ package Monopoly.Model.Players;
 import Monopoly.Model.Cards.Card;
 import Monopoly.Model.Cards.PropertyCard;
 import Monopoly.Model.Objects.Dices;
-
 import static Monopoly.Logger.LoggerClass.doLog;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -35,7 +34,7 @@ public abstract class Player {
 	protected ArrayList<Card> playerCardList;
 	protected ArrayList<PropertyCard> playerPropertyList;
 
-    public abstract boolean step(PropertyCard propertyCard,Player player); //I think it will need few parameters
+    public abstract boolean step(PropertyCard propertyCard,Player player, ArrayList<PropertyCard> propertyCardList); //I think it will need few parameters
 
 
     public void payToPlayer(Player player,Integer amount)

@@ -1,5 +1,6 @@
 package Monopoly.Model.Players;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.logging.Level;
 
@@ -15,203 +16,195 @@ public class AIPlayer extends Player {
     private int entrepreneurship;
     private Random generator;
 
-    public AIPlayer(String name)
-    {
-        decisionNo=0;
-        entrepreneurship=0;
-        generator = new Random( 19580427 ); //such random, very number, wow
+    public AIPlayer(String name) {
+        decisionNo = 0;
+        entrepreneurship = 0;
+        generator = new Random(19580427); //such random, very number, wow
         setPlayerName(name);
         initializePlayer();
-		this.isInGame = true;
+        this.isInGame = true;
     }
 
     @Override
-    public boolean step(PropertyCard propertyCard,Player player) {
+    public boolean step(PropertyCard propertyCard, Player player, ArrayList<PropertyCard> propertyCardList) {
         if (propertyCard == null) return false;
 
-        if(propertyCard.getIsOwned() && player!=null)
-        {
+        if (propertyCard.getIsOwned() && player != null) {
             checkForOwnedProperty(propertyCard, player);
             return false;
-        }
-        else
-        {
-            if(propertyCard.getPropertyType()==PropertyCard.PropertyType.SIMPLE)
-            {
-                return steppedOnNotOwnedSimpleProperty((PlotPropertyCard) propertyCard);
-            }
-            else if(propertyCard.getPropertyType()==PropertyCard.PropertyType.UTILITY)
-            {
-                return steppedOnNotOwnedUtilityProperty((UtilityPropertyCard) propertyCard);
-            }
-            else if(propertyCard.getPropertyType()==PropertyCard.PropertyType.RAILING)
-            {
-                return steppedOnNotOwnedRailingProperty((RailingPropertyCard) propertyCard);
+        } else {
+            if (propertyCard.getPropertyType() == PropertyCard.PropertyType.SIMPLE) {
+                return steppedOnNotOwnedSimpleProperty((PlotPropertyCard) propertyCard, propertyCardList);
+            } else if (propertyCard.getPropertyType() == PropertyCard.PropertyType.UTILITY) {
+                return steppedOnNotOwnedUtilityProperty((UtilityPropertyCard) propertyCard, propertyCardList);
+            } else if (propertyCard.getPropertyType() == PropertyCard.PropertyType.RAILING) {
+                return steppedOnNotOwnedRailingProperty((RailingPropertyCard) propertyCard, propertyCardList);
             }
         }
 
-           return false;
+        return false;
     }
 
     private void checkForOwnedProperty(PropertyCard propertyCard, Player player) {
-        if(propertyCard.getPropertyType()==PropertyCard.PropertyType.SIMPLE)
-        {
+        if (propertyCard.getPropertyType() == PropertyCard.PropertyType.SIMPLE) {
             steppedOnOwnedSimpleProperty((PlotPropertyCard) propertyCard, player);
-        }
-        else if (propertyCard.getPropertyType()==PropertyCard.PropertyType.RAILING)
-        {
-            payToPlayer(player,((RailingPropertyCard)propertyCard).getValueOnePropertyOwned());
-        }
-        else if (propertyCard.getPropertyType()==PropertyCard.PropertyType.UTILITY)
-        {
-            payToPlayer(player,((UtilityPropertyCard)propertyCard).getValueOnePropertyOwned());
+        } else if (propertyCard.getPropertyType() == PropertyCard.PropertyType.RAILING) {
+            payToPlayer(player, ((RailingPropertyCard) propertyCard).getValueOnePropertyOwned());
+        } else if (propertyCard.getPropertyType() == PropertyCard.PropertyType.UTILITY) {
+            payToPlayer(player, ((UtilityPropertyCard) propertyCard).getValueOnePropertyOwned());
         }
     }
 
-    private boolean steppedOnNotOwnedRailingProperty(RailingPropertyCard propertyCard) {
+    private boolean steppedOnNotOwnedRailingProperty(RailingPropertyCard propertyCard, ArrayList<PropertyCard> propertyCardList) {
         boolean buy;
-        buy=makeRailwayDecision(propertyCard);
-        if(buy)
-        {
+        buy = makeRailwayDecision(propertyCard, propertyCardList);
+        if (buy) {
             doLog(Level.INFO, "Az AI játékos megveszi a vasutat.");
             return true;
-        }
-        else
-        {
+        } else {
             doLog(Level.INFO, "Az AI játékos nem veszi meg a vasutat.");
             return false;
         }
     }
 
-    private boolean steppedOnNotOwnedUtilityProperty(UtilityPropertyCard propertyCard) {
+    private boolean steppedOnNotOwnedUtilityProperty(UtilityPropertyCard propertyCard, ArrayList<PropertyCard> propertyCardList) {
         boolean buy;
-        buy=makeUtilityDecision(propertyCard);
-        if(buy)
-        {
+        buy = makeUtilityDecision(propertyCard, propertyCardList);
+        if (buy) {
             doLog(Level.INFO, "Az AI játékos megveszi a művet.");
             return true;
-        }
-        else
-        {
+        } else {
             doLog(Level.INFO, "Az AI játékos nem veszi meg a művet.");
             return false;
         }
     }
 
-    private boolean steppedOnNotOwnedSimpleProperty(PlotPropertyCard propertyCard) {
+    private boolean steppedOnNotOwnedSimpleProperty(PlotPropertyCard propertyCard, ArrayList<PropertyCard> propertyCardList) {
         boolean buy;
-        buy=makePlotDecision(propertyCard);
-        if(buy)
-        {
+        buy = makePlotDecision(propertyCard, propertyCardList);
+        if (buy) {
             doLog(Level.INFO, "Az AI játékos megveszi a telket.");
             incrementBoughtPropertyTypeCount(propertyCard);
 
             return true;
-        }
-        else
-        {
+        } else {
             doLog(Level.INFO, "Az AI játékos nem veszi meg a telket.");
             return false;
         }
     }
 
     private void incrementBoughtPropertyTypeCount(PlotPropertyCard plotPropertyCard) {
-        if (plotPropertyCard.getColourType()==PlotPropertyCard.Colour_Type.BLUE)
-        {
+        if (plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.BLUE) {
             bluePropertyNo++;
-        }
-        else if  (plotPropertyCard.getColourType()==PlotPropertyCard.Colour_Type.LIGHT_BLUE)
-        {
+        } else if (plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.LIGHT_BLUE) {
             lightBluePropertyNo++;
-        }
-        else if  (plotPropertyCard.getColourType()==PlotPropertyCard.Colour_Type.ORANGE)
-        {
-              orangePropertyNo++;
-        }
-        else if  (plotPropertyCard.getColourType()==PlotPropertyCard.Colour_Type.PURPLE)
-        {
-              purplePropertyNo++;
-        }
-        else if  (plotPropertyCard.getColourType()==PlotPropertyCard.Colour_Type.GREEN)
-        {
+        } else if (plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.ORANGE) {
+            orangePropertyNo++;
+        } else if (plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.PURPLE) {
+            purplePropertyNo++;
+        } else if (plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.GREEN) {
             greenPropertyNo++;
-        }
-        else if  (plotPropertyCard.getColourType()==PlotPropertyCard.Colour_Type.BROWN)
-        {
+        } else if (plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.BROWN) {
             brownPropertyNo++;
-        }
-        else if  (plotPropertyCard.getColourType()==PlotPropertyCard.Colour_Type.RED)
-        {
+        } else if (plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.RED) {
             redPropertyNo++;
-        }
-        else if  (plotPropertyCard.getColourType()==PlotPropertyCard.Colour_Type.YELLOW)
-        {
+        } else if (plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.YELLOW) {
             yellowPropertyNo++;
         }
     }
 
     private void steppedOnOwnedSimpleProperty(PlotPropertyCard propertyCard, Player player) {
-        if(propertyCard.getHouseNo()==0)
-        {
+        if (propertyCard.getHouseNo() == 0) {
             payToPlayer(player, propertyCard.getRentalValueNoHouses());
         }
 
-        if(propertyCard.getHasHouse())
-        {
+        if (propertyCard.getHasHouse()) {
 
-            if(propertyCard.getHouseNo()==1)
-            {
+            if (propertyCard.getHouseNo() == 1) {
                 payToPlayer(player, propertyCard.getRentalValueOneHouse());
-            }
-            else if(propertyCard.getHouseNo()==2)
-            {
+            } else if (propertyCard.getHouseNo() == 2) {
                 payToPlayer(player, propertyCard.getRentalValueTwoHouses());
-            }
-            else if(propertyCard.getHouseNo()==3)
-            {
+            } else if (propertyCard.getHouseNo() == 3) {
                 payToPlayer(player, propertyCard.getRentalValueThreeHouses());
-            }
-            else
-            {
-               payToPlayer(player, propertyCard.getRentalValueFourHouses());
+            } else {
+                payToPlayer(player, propertyCard.getRentalValueFourHouses());
             }
         }
 
-        if(propertyCard.getHasHotel())
-        {
+        if (propertyCard.getHasHotel()) {
             payToPlayer(player, propertyCard.getRentalValueHotel());
         }
     }
 
-    public boolean makeJailDecision()
-    {
+    public boolean makeJailDecision() {
 
-        if(playerCardList.size()!=0)
-        {
-            playerCardList.remove(playerCardList.size()-1);
+        if (playerCardList.size() != 0) {
+            playerCardList.remove(playerCardList.size() - 1);
             return false;
-        }
-        else
-        {
-            if(playerCash>250)
-            {
-                playerCash-=50;
+        } else {
+            if (playerCash > 250) {
+                playerCash -= 50;
                 return false;
-            }
-            else
-            {
+            } else {
                 return true;
             }
         }
     }
 
-    private boolean makePlotDecision(PlotPropertyCard plotPropertyCard)
+
+    private int getOwnedPlotNoByColor(PlotPropertyCard plotPropertyCard, ArrayList<PropertyCard> propertyCardList) {
+
+        int plotNo = 0;
+        for (PropertyCard pc : propertyCardList) {
+            if (pc != null && pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE) {
+                PlotPropertyCard ppc = (PlotPropertyCard) pc;
+                if (ppc != null && ppc.getColourType() == plotPropertyCard.getColourType() && ppc.getIsOwned() == false) {
+                    plotNo++;
+                }
+            }
+        }
+        return plotNo;
+    }
+
+    private int getOwnedPropertyNo(PropertyCard.PropertyType propertyType,ArrayList<PropertyCard> propertyCardList)
+    {
+        int propertyNo=0;
+        for (PropertyCard pc : propertyCardList) {
+            if (pc != null && pc.getPropertyType()==propertyType && pc.getIsOwned()==false)
+            {
+                propertyNo++;
+            }
+        }
+
+        return propertyNo;
+    }
+
+    private boolean makePlotDecision(PlotPropertyCard plotPropertyCard, ArrayList<PropertyCard> propertyCardList)
     {
         decisionNo=0;
         entrepreneurship=generator.nextInt(2);
 
+
         if(!plotPropertyCard.getIsOwned() && playerCash>plotPropertyCard.getCost())
         {
+
+            int plotNo=getOwnedPlotNoByColor(plotPropertyCard, propertyCardList);
+
+            if(plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.RED ||
+               plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.YELLOW ||
+               plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.BLUE ||
+               plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.GREEN)
+            {
+                if(plotNo==0)
+                    decisionNo+=2;
+                else
+                    decisionNo++;
+            }
+            else
+            {
+                if (plotNo == 0)
+                    decisionNo++;
+            }
             if(playerCash>plotPropertyCard.getCost()+plotPropertyCard.getCost()/2)
             {
                 decisionNo++;
@@ -253,7 +246,7 @@ public class AIPlayer extends Player {
         return decisionNo > 5;
     }
 
-    private Boolean makeRailwayDecision(RailingPropertyCard railingPropertyCard)
+    private Boolean makeRailwayDecision(RailingPropertyCard railingPropertyCard, ArrayList<PropertyCard> propertyCardList)
     {
         Integer railingCount=0;
         Integer propertyCount=0;
@@ -261,6 +254,8 @@ public class AIPlayer extends Player {
         entrepreneurship=generator.nextInt(2);
         if(!railingPropertyCard.getIsOwned() && playerCash>railingPropertyCard.getCost())
         {
+            if(getOwnedPropertyNo(PropertyCard.PropertyType.RAILING, propertyCardList)==0)
+                decisionNo++;
             if(playerCash>railingPropertyCard.getCost()+railingPropertyCard.getCost()/2)
             {
                 decisionNo++;
@@ -300,7 +295,7 @@ public class AIPlayer extends Player {
         return decisionNo >= 3 || randomDecision == 1 && decisionNo == 2;
     }
 
-    private Boolean makeUtilityDecision(UtilityPropertyCard utilityPropertyCard)
+    private Boolean makeUtilityDecision(UtilityPropertyCard utilityPropertyCard, ArrayList<PropertyCard> propertyCardList)
     {
         Integer utilityCount=0;
         Integer propertyCount=0;
@@ -308,6 +303,8 @@ public class AIPlayer extends Player {
         entrepreneurship=generator.nextInt(2);
         if(!utilityPropertyCard.getIsOwned() && playerCash>utilityPropertyCard.getCost())
         {
+            if(getOwnedPropertyNo(PropertyCard.PropertyType.UTILITY, propertyCardList)==0)
+                decisionNo++;
             if(playerCash>utilityPropertyCard.getCost()+utilityPropertyCard.getCost()/2)
             {
                 decisionNo++;
@@ -339,10 +336,23 @@ public class AIPlayer extends Player {
         return decisionNo >= 3 || randomDecision == 1 && decisionNo == 2;
     }
 
-    public PlotPropertyCard.Colour_Type makeHouseDecision()
+    public PlotPropertyCard.Colour_Type makeHouseDecision(ArrayList<PropertyCard> propertyCardList)
     {
         decisionNo=0;
         entrepreneurship=generator.nextInt(2);
+
+        for(int i=0;i<6;i++)
+        {
+            if(propertyCardList.get((playerLocation+i)%propertyCardList.size()).getPropertyType()== PropertyCard.PropertyType.SIMPLE)
+            {
+                PlotPropertyCard ppc=(PlotPropertyCard) propertyCardList.get((playerLocation+i)%propertyCardList.size());
+                if(!ppc.getHasHouse())
+                    decisionNo++;
+                else
+                    decisionNo--;
+            }
+        }
+
         if(entrepreneurship==1 && playerCash>=200)
         {
             decisionNo+=3;
@@ -395,7 +405,7 @@ public class AIPlayer extends Player {
 
     }
 
-    public PlotPropertyCard.Colour_Type makeHotelDecision()      //ez!!!!!!!!!!!!!!!!!!!!!!! (ez mi?:D)
+    public PlotPropertyCard.Colour_Type makeHotelDecision()      //ez!!!!!!!!!!!!!!!!!!!!!!! (ez mi?:D) (ez már nem tudom mi :D)
     {
         decisionNo=0;
         entrepreneurship=generator.nextInt(2);

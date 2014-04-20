@@ -1,15 +1,17 @@
-package Monopoly.Test;
+/*package Monopoly.Test;
 
 import Monopoly.Model.Objects.Bank;
 import Monopoly.Model.Players.HumanPlayer;
 import Monopoly.Model.XML.XMLParser;
-import junit.framework.TestCase;
+import junit.framework.TestCase;*/
 
 /**
  * User: Benjamin
  * Date: 2013.10.26.
  * Time: 18:36
  */
+
+/*
 public class TestClass extends TestCase {
 
 	public void testPlayer(){
@@ -84,3 +86,4 @@ public class TestClass extends TestCase {
 	}
 
 }
+*/

@@ -169,4 +169,10 @@ public class Bank {
             bankMoney+=propertyCard.getHotelCost()*no;
         }
     }
+
+    public ArrayList<PropertyCard> getPropertyCardList()
+    {
+        return propertyCardList;
+
+    }
 }
