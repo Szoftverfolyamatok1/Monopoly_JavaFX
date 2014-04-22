@@ -133,7 +133,9 @@ public class GameController {
         return playerList.get(player).getCurrentPlace();
     }
 
-	public Pair<Boolean,Integer> rollTheDice(){
+    //VIVI
+    //returns the Pair of the thrown numbers as well, so that we can display the dices
+	public Pair<Boolean,Pair<Integer,Integer>> rollTheDice(){
         playerWhoThrown = currentPlayer();
         doLog(Level.INFO, "A(z)" + (playerWhoThrown+1) + ". játékos lépett" );
 		if ( !checkGameOver() )
@@ -145,7 +147,7 @@ public class GameController {
 			}
 
 			Integer prevPlace=playerList.get(getPlayerCounter_CheckForOrderValidity()).getCurrentPlace();
-			Integer currentThrow=playerList.get(getPlayerCounter_CheckForOrderValidity()).rollTheDice();
+            Pair<Integer,Integer> throwResult = playerList.get(getPlayerCounter_CheckForOrderValidity()).rollTheDice();
 
 			String currentElement=  boardElement.getElementById(playerList.get(getPlayerCounter_CheckForOrderValidity()).getCurrentPlace());
 			if (currentElement.substring(0,currentElement.length()-1).equals("Community_Chest_"))
@@ -178,7 +180,7 @@ public class GameController {
 				}
 				nextPlayer();
 				getPlayerCounter_CheckForOrderValidity();
-				return new Pair<Boolean,Integer>(false,currentThrow);
+				return new Pair<Boolean,Pair<Integer,Integer>>(false,throwResult);
 			}
 
 			if( prevPlace > playerList.get(getPlayerCounter_CheckForOrderValidity()).getCurrentPlace()
@@ -203,12 +205,12 @@ public class GameController {
 				nextPlayer();
 				getPlayerCounter_CheckForOrderValidity();
 
-				return new Pair<Boolean,Integer>(buy,currentThrow);
+				return new Pair<Boolean,Pair<Integer,Integer>>(buy,throwResult);
 			}
 
 			buy= playerList.get(getPlayerCounter_CheckForOrderValidity()).step(pc,hasPropertyCard(pc),getPropertyCardList());
 			buyProperty(name, buy);
-			return new Pair<Boolean,Integer>(buy,currentThrow);
+			return new Pair<Boolean,Pair<Integer,Integer>>(buy,throwResult);
 		}
 
 		//fel kell dobni egy ablakot, hogy vége a játéknak

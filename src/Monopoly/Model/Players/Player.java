@@ -6,6 +6,7 @@ import Monopoly.Model.Objects.Dices;
 import static Monopoly.Logger.LoggerClass.doLog;
 import java.util.ArrayList;
 import java.util.logging.Level;
+import javafx.util.Pair;
 
 public abstract class Player {
 	final private int MAX_DOUBLE_THROW_NUMBER_IN_A_ROW = 3;
@@ -79,11 +80,15 @@ public abstract class Player {
 	}
 
 	//simply roll the dice, and check if it is double
-	public Integer rollTheDice() {
+    //VIVI
+    //returns both numbers as a Pair, so that we can display the dices
+	public Pair<Integer,Integer> rollTheDice() {
 		if ( doubleThrowCount == 0 || doubleThrowCount == -1 ){
             ++turnNumber;
         }
-		currentThrowSum = currentThrowResult.rollTheDice();
+
+        Pair<Integer,Integer> throwResult = currentThrowResult.rollTheDice();
+		currentThrowSum = throwResult.getKey()+throwResult.getValue();
 
 		checkIfItWasDouble();
 		if (!getIsPlayerInJail()){
@@ -93,7 +98,8 @@ public abstract class Player {
         else{
             playerLocation=10;
         }
-        return currentThrowSum;
+
+        return throwResult;
     }
 
 	public Integer getCurrentPlace(){

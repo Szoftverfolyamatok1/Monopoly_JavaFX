@@ -40,7 +40,11 @@ public class ViewController {
     public Button newGameButton,settingsButton,helpButton,loadButton,exitButton,playerBuyHousesButton,closeCommunityChest;
 
     //game
-    public Button dice,ingameHelpButton;
+    public Button ingameHelpButton;
+    // VIVI
+    // it's HBox because we have to put 2 images on it (dice1, dice2)
+    private HBox dice;
+    private Button dice1, dice2;
     public Label diceResult;
     public TilePane infoPane;
     public ArrayList<Label> playerCashLabels,playerNameLabels;
@@ -268,10 +272,21 @@ public class ViewController {
 		ingameHelpButton.setPrefSize(98,40);
 
         //Dice button
-		dice=new Button();
-		dice.setId("dice");
-		dice.setPrefSize(90, 90);
-		dice.relocate(100, 100);
+        //VIVI
+        //new dice "button" with "images" :D
+		dice=new HBox();
+        dice.setPrefSize(90, 90);
+        dice.relocate(100, 100);
+        dice1 = new Button();
+        dice1.setDisable(true);
+        dice1.getStyleClass().add("dice1");
+        dice1.setPrefSize(45, 45);
+        dice2 = new Button();
+        dice2.setDisable(true);
+        dice2.getStyleClass().add("dice2");
+        dice2.setPrefSize(45, 45);
+        dice.getChildren().addAll(dice1,dice2);
+		//dice.setId("dice");
 
         diceResult=new Label();
         diceResult.relocate(200, 100);
@@ -528,7 +543,10 @@ public class ViewController {
         communityChestPane.setVisible(false);
         Integer currentPlayer = game.currentPlayer();
         Integer currentField = game.getCurrentPlace(currentPlayer);
-        Pair<Boolean,Integer> currentPair = game.rollTheDice();
+        Pair<Boolean,Pair<Integer,Integer>> currentPair = game.rollTheDice();
+        Integer firstDice = currentPair.getValue().getKey();
+        Integer secondDice = currentPair.getValue().getValue();
+        Integer throwResult = secondDice+firstDice;
         Integer nextField = game.getCurrentPlace(currentPlayer);
         if(nextField != null && !nextField.equals(currentField)){
             step(currentPlayer,currentField,nextField);
@@ -541,7 +559,14 @@ public class ViewController {
 			addPropertyRecordToPanel(currentPlayer, nextField);
         }
 
-		diceResult.setText(playerNameLabels.get(currentPlayer).getText()+"'s throw result: "+currentPair.getValue());
+        //VIVI
+        //modify dice display according to the thrown numbers
+        dice1.getStyleClass().clear();
+        dice1.getStyleClass().add("dice"+firstDice);
+        dice2.getStyleClass().clear();
+        dice2.getStyleClass().add("dice"+secondDice);
+
+		diceResult.setText(playerNameLabels.get(currentPlayer).getText() + "'s throw result: " + throwResult);
     }
 
 	private void addPropertyRecordToPanel(Integer currentPlayer, Integer nextField) {

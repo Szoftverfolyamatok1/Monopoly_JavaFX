@@ -1,16 +1,754 @@
-ápr. 19, 2014 10:26:28 DU Monopoly.Logger$LoggerClass doLog
+ápr. 23, 2014 1:10:36 DE Monopoly.Logger$LoggerClass doLog
 INFO: BoardElementek betöltve, darab: 40
-ápr. 19, 2014 10:26:28 DU Monopoly.Logger$LoggerClass doLog
+ápr. 23, 2014 1:10:36 DE Monopoly.Logger$LoggerClass doLog
 INFO: Property betöltve, darab: 28
-ápr. 19, 2014 10:26:28 DU Monopoly.Logger$LoggerClass doLog
+ápr. 23, 2014 1:10:36 DE Monopoly.Logger$LoggerClass doLog
 INFO: CommunityChest betöltve, darab: 14
-ápr. 19, 2014 10:26:28 DU Monopoly.Logger$LoggerClass doLog
+ápr. 23, 2014 1:10:36 DE Monopoly.Logger$LoggerClass doLog
 INFO: Chance betöltve, darab: 14
-ápr. 19, 2014 10:26:28 DU Monopoly.Logger$LoggerClass doLog
+ápr. 23, 2014 1:10:36 DE Monopoly.Logger$LoggerClass doLog
 INFO: Property betöltve, darab: 28
-ápr. 19, 2014 10:26:28 DU Monopoly.Logger$LoggerClass doLog
+ápr. 23, 2014 1:10:36 DE Monopoly.Logger$LoggerClass doLog
 INFO: Chance betöltve, darab: 14
-ápr. 19, 2014 10:26:28 DU Monopoly.Logger$LoggerClass doLog
+ápr. 23, 2014 1:10:36 DE Monopoly.Logger$LoggerClass doLog
 INFO: CommunityChest betöltve, darab: 14
-ápr. 19, 2014 10:26:28 DU com.sun.javafx.css.parser.CSSParser declaration
-WARNING: CSS Error parsing file:/C:/Users/Greta/IdeaProjects/Monopoly_JavaFX/out/production/MonopolyGame_JavaFX/Monopoly/style.css: Expected '<font-family>' while parsing '-fx-font' at [137,19]
+ápr. 23, 2014 1:10:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: Új játék kezdődött.
+ápr. 23, 2014 1:10:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékosok inícializálása
+ápr. 23, 2014 1:10:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: Computer player 1 elkészült.
+ápr. 23, 2014 1:10:41 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:10:41 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:10:41 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:St. Charles Place
+ápr. 23, 2014 1:10:41 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:St. Charles Place
+ápr. 23, 2014 1:10:41 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:10:41 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:10:41 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:10:41 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:St. Charles Place
+ápr. 23, 2014 1:10:41 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:St. Charles Place
+ápr. 23, 2014 1:10:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:10:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:10:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:10:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:10:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az AI játékos nem veszi meg a telket.
+ápr. 23, 2014 1:10:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:10:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:10:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:10:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:10:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:10:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:10:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:St. James Place
+ápr. 23, 2014 1:10:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:St. James Place
+ápr. 23, 2014 1:10:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:10:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:10:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:10:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:St. James Place
+ápr. 23, 2014 1:10:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:St. James Place
+ápr. 23, 2014 1:10:51 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:10:51 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:10:51 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:10:53 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:10:53 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:10:53 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:10:53 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:10:55 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:10:55 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:10:55 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:10:57 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:10:57 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:10:57 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Pacific Avenue
+ápr. 23, 2014 1:10:57 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Pacific Avenue
+ápr. 23, 2014 1:10:57 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:10:57 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:10:57 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:10:57 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Pacific Avenue
+ápr. 23, 2014 1:10:57 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Pacific Avenue
+ápr. 23, 2014 1:10:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:10:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:10:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:10:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:10:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az AI játékos megveszi a telket.
+ápr. 23, 2014 1:10:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: A játékos aki meg akarja venni: Computer Player 1, ezt a telket: Kentucky Avenue
+ápr. 23, 2014 1:10:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:10:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:10:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:10:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:10:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Pennsylvania Avenue
+ápr. 23, 2014 1:11:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Pennsylvania Avenue
+ápr. 23, 2014 1:11:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Pennsylvania Avenue
+ápr. 23, 2014 1:11:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Pennsylvania Avenue
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: A Computer Player 1 nevű játékos duplát dobott.
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Indiana Avenue
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Indiana Avenue
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az AI játékos megveszi a telket.
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: A játékos aki meg akarja venni: Computer Player 1, ezt a telket: Indiana Avenue
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Indiana Avenue
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Indiana Avenue
+ápr. 23, 2014 1:11:01 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:05 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:05 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:05 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Ventnor Avenue
+ápr. 23, 2014 1:11:05 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Ventnor Avenue
+ápr. 23, 2014 1:11:05 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az AI játékos megveszi a telket.
+ápr. 23, 2014 1:11:05 DE Monopoly.Logger$LoggerClass doLog
+INFO: A játékos aki meg akarja venni: Computer Player 1, ezt a telket: Ventnor Avenue
+ápr. 23, 2014 1:11:05 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:05 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:05 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Ventnor Avenue
+ápr. 23, 2014 1:11:05 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Ventnor Avenue
+ápr. 23, 2014 1:11:05 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:06 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:06 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:06 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:06 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:08 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:08 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:08 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Short Line
+ápr. 23, 2014 1:11:08 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Short Line
+ápr. 23, 2014 1:11:08 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az AI játékos nem veszi meg a vasutat.
+ápr. 23, 2014 1:11:08 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:08 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:08 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Short Line
+ápr. 23, 2014 1:11:08 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Short Line
+ápr. 23, 2014 1:11:10 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:10 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:10 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:10 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:11 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:11 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:11 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:11:11 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:11:11 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az AI játékos nem veszi meg a telket.
+ápr. 23, 2014 1:11:11 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:11 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:11 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:11:11 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:11:13 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:13 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:13 DE Monopoly.Logger$LoggerClass doLog
+INFO: A DefaultName nevű játékos duplát dobott.
+ápr. 23, 2014 1:11:13 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Virginia Avenue
+ápr. 23, 2014 1:11:13 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Virginia Avenue
+ápr. 23, 2014 1:11:13 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:13 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:13 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:13 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Virginia Avenue
+ápr. 23, 2014 1:11:13 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Virginia Avenue
+ápr. 23, 2014 1:11:18 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:18 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:18 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Illinois Avenue
+ápr. 23, 2014 1:11:18 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Illinois Avenue
+ápr. 23, 2014 1:11:18 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:18 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:18 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:18 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Illinois Avenue
+ápr. 23, 2014 1:11:18 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Illinois Avenue
+ápr. 23, 2014 1:11:19 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:19 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:19 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:19 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:19 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az AI játékos megveszi a művet.
+ápr. 23, 2014 1:11:19 DE Monopoly.Logger$LoggerClass doLog
+INFO: A játékos aki meg akarja venni: Computer Player 1, ezt a telket: Electric Company
+ápr. 23, 2014 1:11:19 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:19 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:19 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:19 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:19 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:21 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:21 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:21 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:North Carolina Avenue
+ápr. 23, 2014 1:11:21 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:North Carolina Avenue
+ápr. 23, 2014 1:11:21 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:21 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:21 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:21 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:North Carolina Avenue
+ápr. 23, 2014 1:11:21 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:North Carolina Avenue
+ápr. 23, 2014 1:11:22 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:22 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:22 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:23 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:23 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:23 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:23 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: A Computer Player 1 nevű játékos duplát dobott.
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékosnak fizetve. Név: Computer Player 1, összeg: 18
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:24 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:26 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:26 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:26 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:26 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:26 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az AI játékos megveszi a telket.
+ápr. 23, 2014 1:11:26 DE Monopoly.Logger$LoggerClass doLog
+INFO: A játékos aki meg akarja venni: Computer Player 1, ezt a telket: Atlantic Avenue
+ápr. 23, 2014 1:11:26 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:26 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:26 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:26 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:26 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:28 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:28 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:28 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Boardwalk
+ápr. 23, 2014 1:11:28 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Boardwalk
+ápr. 23, 2014 1:11:28 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:28 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:28 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:28 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Boardwalk
+ápr. 23, 2014 1:11:28 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Boardwalk
+ápr. 23, 2014 1:11:29 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:29 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:29 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Pennsylvania Avenue
+ápr. 23, 2014 1:11:29 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Pennsylvania Avenue
+ápr. 23, 2014 1:11:29 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az AI játékos nem veszi meg a telket.
+ápr. 23, 2014 1:11:29 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:29 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:29 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Pennsylvania Avenue
+ápr. 23, 2014 1:11:29 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Pennsylvania Avenue
+ápr. 23, 2014 1:11:30 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:30 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:30 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:30 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:31 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:31 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:31 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:11:31 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:11:31 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az AI játékos megveszi a telket.
+ápr. 23, 2014 1:11:31 DE Monopoly.Logger$LoggerClass doLog
+INFO: A játékos aki meg akarja venni: Computer Player 1, ezt a telket: Baltic Avenue
+ápr. 23, 2014 1:11:31 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:31 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:31 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:11:31 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Baltic Avenue
+ápr. 23, 2014 1:11:31 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:33 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:33 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:33 DE Monopoly.Logger$LoggerClass doLog
+INFO: A DefaultName nevű játékos duplát dobott.
+ápr. 23, 2014 1:11:33 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Connecticut Avenue
+ápr. 23, 2014 1:11:33 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Connecticut Avenue
+ápr. 23, 2014 1:11:33 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:33 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:33 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:33 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Connecticut Avenue
+ápr. 23, 2014 1:11:33 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Connecticut Avenue
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékosnak fizetve. Név: Computer Player 1, összeg: 4
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:11:35 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:37 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:37 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:37 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: A DefaultName nevű játékos duplát dobott.
+ápr. 23, 2014 1:11:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Virginia Avenue
+ápr. 23, 2014 1:11:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Virginia Avenue
+ápr. 23, 2014 1:11:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Virginia Avenue
+ápr. 23, 2014 1:11:38 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Virginia Avenue
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékosnak fizetve. Név: Computer Player 1, összeg: 18
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Kentucky Avenue
+ápr. 23, 2014 1:11:42 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:45 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:45 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:45 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:St. James Place
+ápr. 23, 2014 1:11:45 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:St. James Place
+ápr. 23, 2014 1:11:45 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az AI játékos nem veszi meg a telket.
+ápr. 23, 2014 1:11:45 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:45 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:45 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:St. James Place
+ápr. 23, 2014 1:11:45 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:St. James Place
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékosnak fizetve. Név: Computer Player 1, összeg: 22
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Atlantic Avenue
+ápr. 23, 2014 1:11:46 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:47 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:47 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:47 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Indiana Avenue
+ápr. 23, 2014 1:11:47 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Indiana Avenue
+ápr. 23, 2014 1:11:47 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:47 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékosnak fizetve. Név: Computer Player 1, összeg: 18
+ápr. 23, 2014 1:11:47 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:47 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:47 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Indiana Avenue
+ápr. 23, 2014 1:11:47 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Indiana Avenue
+ápr. 23, 2014 1:11:47 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:49 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: A Computer Player 1 nevű játékos duplát dobott.
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Ventnor Avenue
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Ventnor Avenue
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékosnak fizetve. Név: Computer Player 1, összeg: 22
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Ventnor Avenue
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Ventnor Avenue
+ápr. 23, 2014 1:11:52 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:11:55 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:55 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:11:55 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:11:56 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:56 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:56 DE Monopoly.Logger$LoggerClass doLog
+INFO: A DefaultName nevű játékos duplát dobott.
+ápr. 23, 2014 1:11:56 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Park Place
+ápr. 23, 2014 1:11:56 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Park Place
+ápr. 23, 2014 1:11:56 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:56 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:56 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:56 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Park Place
+ápr. 23, 2014 1:11:56 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Park Place
+ápr. 23, 2014 1:11:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:11:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Oriental Avenue
+ápr. 23, 2014 1:11:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Oriental Avenue
+ápr. 23, 2014 1:11:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:11:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:11:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Oriental Avenue
+ápr. 23, 2014 1:11:59 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Oriental Avenue
+ápr. 23, 2014 1:12:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:12:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)2. játékos lépett
+ápr. 23, 2014 1:12:00 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 1
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: A(z)1. játékos lépett
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: A DefaultName nevű játékos duplát dobott.
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: Az emberi játékos lépett.
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: Player: 0
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: DefaultName, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, Ellenorzes erre:Electric Company
+ápr. 23, 2014 1:12:02 DE Monopoly.Logger$LoggerClass doLog
+INFO: Játékos neve: Computer Player 1, isOwned: true
