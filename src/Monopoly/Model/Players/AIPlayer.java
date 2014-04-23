@@ -517,8 +517,6 @@ public class AIPlayer extends Player {
                     PlotPropertyCard ppc = (PlotPropertyCard) pc;
                     if (((PlotPropertyCard) pc).getColourType() == colourType && ((PlotPropertyCard) pc).getHasHotel())
                         return true;
-                    else
-                        return false;
 
                 }
             }
