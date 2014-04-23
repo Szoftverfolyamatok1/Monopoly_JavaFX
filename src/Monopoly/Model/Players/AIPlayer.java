@@ -397,35 +397,36 @@ public class AIPlayer extends Player {
 
         if(decisionNo>=2)
         {
-            if(brownPropertyNo==2 && playerCash>=250 )
+
+            if(!getHasHotel(propertyCardList, PlotPropertyCard.Colour_Type.BROWN) && brownPropertyNo==2 && playerCash>=250 )
             {
                 return PlotPropertyCard.Colour_Type.BROWN;
             }
-            if(lightBluePropertyNo==3 && playerCash>=300 )
+            if(!getHasHotel(propertyCardList, PlotPropertyCard.Colour_Type.LIGHT_BLUE) && lightBluePropertyNo==3 && playerCash>=300 )
             {
                 return  PlotPropertyCard.Colour_Type.LIGHT_BLUE;
             }
-            if(purplePropertyNo==3 && playerCash>=400 )
+            if(!getHasHotel(propertyCardList, PlotPropertyCard.Colour_Type.PURPLE) && purplePropertyNo==3 && playerCash>=400 )
             {
                 return PlotPropertyCard.Colour_Type.PURPLE;
             }
-            if(orangePropertyNo==3 && playerCash>=420)
+            if(!getHasHotel(propertyCardList, PlotPropertyCard.Colour_Type.ORANGE) && orangePropertyNo==3 && playerCash>=420)
             {
                 return PlotPropertyCard.Colour_Type.ORANGE;
             }
-            if(yellowPropertyNo==3 && playerCash>=400 )
+            if(!getHasHotel(propertyCardList, PlotPropertyCard.Colour_Type.YELLOW) && yellowPropertyNo==3 && playerCash>=400 )
             {
                 return PlotPropertyCard.Colour_Type.YELLOW;
             }
-            if(redPropertyNo==3 && playerCash>=550 )
+            if(!getHasHotel(propertyCardList, PlotPropertyCard.Colour_Type.RED) && redPropertyNo==3 && playerCash>=550 )
             {
                 return PlotPropertyCard.Colour_Type.RED;
             }
-            if(bluePropertyNo==2 && playerCash>=400 )
+            if(!getHasHotel(propertyCardList, PlotPropertyCard.Colour_Type.BLUE) && bluePropertyNo==2 && playerCash>=400 )
             {
                 return PlotPropertyCard.Colour_Type.BLUE;
             }
-            if(greenPropertyNo==3 && playerCash>=700 )
+            if(!getHasHotel(propertyCardList, PlotPropertyCard.Colour_Type.GREEN) && greenPropertyNo==3 && playerCash>=700 )
             {
                 return PlotPropertyCard.Colour_Type.GREEN;
             }
@@ -507,5 +508,18 @@ public class AIPlayer extends Player {
 
         }
         return null;
+    }
+
+    private boolean getHasHotel(ArrayList<PropertyCard> propertyCardList, PlotPropertyCard.Colour_Type colourType)
+    {
+            for(PropertyCard pc: propertyCardList) {
+                if (pc != null && pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE) {
+                    PlotPropertyCard ppc = (PlotPropertyCard) pc;
+                    if (((PlotPropertyCard) pc).getColourType() == colourType && ((PlotPropertyCard) pc).getHasHotel())
+                        return true;
+
+                }
+            }
+        return false;
     }
 }
