@@ -19,7 +19,7 @@ public class AIPlayer extends Player {
     public AIPlayer(String name) {
         decisionNo = 0;
         entrepreneurship = 0;
-        generator = new Random(19580427); //such random, very number, wow
+        generator = new Random(19580427);
         setPlayerName(name);
         initializePlayer();
         this.isInGame = true;
@@ -43,6 +43,53 @@ public class AIPlayer extends Player {
         }
 
         return false;
+    }
+
+    private int getOwnedPlotNoByColor(PlotPropertyCard plotPropertyCard, ArrayList<PropertyCard> propertyCardList) {
+        int plotNo = 0;
+        for (PropertyCard pc : propertyCardList) {
+            if (pc != null && pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE) {
+                PlotPropertyCard ppc = (PlotPropertyCard) pc;
+                if (ppc != null && ppc.getColourType() == plotPropertyCard.getColourType() && ppc.getIsOwned() == false) {
+                    plotNo++;
+                }
+            }
+        }
+        return plotNo;
+    }
+
+    private int getOwnedPropertyNo(PropertyCard.PropertyType propertyType,ArrayList<PropertyCard> propertyCardList){
+        int propertyNo=0;
+        for (PropertyCard pc : propertyCardList) {
+            if (pc != null && pc.getPropertyType()==propertyType && pc.getIsOwned()==false){
+                propertyNo++;
+            }
+        }
+
+        return propertyNo;
+    }
+
+    private boolean getNoByColorAndPlayer(PlotPropertyCard plotPropertyCard)
+    {
+        int no=0;
+        for(PropertyCard pc: getPropertyList())
+        {
+            if (pc != null && pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE) {
+                PlotPropertyCard ppc = (PlotPropertyCard) pc;
+                if (ppc.getColourType()==plotPropertyCard.getColourType())
+                    no++;
+            }
+        }
+
+        if(plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.BROWN ||
+                plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.BLUE)
+        {
+            return no==1?true:false;
+        }
+        else
+        {
+            return (no==1 || no==2)?true:false;
+        }
     }
 
     private void checkForOwnedProperty(PropertyCard propertyCard, Player player) {
@@ -136,6 +183,31 @@ public class AIPlayer extends Player {
         }
     }
 
+    private int isPropertyOwned(PlotPropertyCard plotPropertyCard, ArrayList<PropertyCard> propertyCardList)
+    {
+        int plotNo=getOwnedPlotNoByColor(plotPropertyCard, propertyCardList);
+
+        if(plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.RED ||
+                plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.YELLOW ||
+                plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.BLUE ||
+                plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.GREEN)
+        {
+            if(plotNo==0)
+                return 2;
+            else
+                return 0;
+        }
+        else
+        {
+            if (plotNo == 0)
+                return 1;
+            else
+                return -1;
+        }
+
+
+    }
+
     public boolean makeJailDecision() {
 
         if (playerCardList.size() != 0) {
@@ -151,63 +223,20 @@ public class AIPlayer extends Player {
         }
     }
 
-
-    private int getOwnedPlotNoByColor(PlotPropertyCard plotPropertyCard, ArrayList<PropertyCard> propertyCardList) {
-
-        int plotNo = 0;
-        for (PropertyCard pc : propertyCardList) {
-            if (pc != null && pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE) {
-                PlotPropertyCard ppc = (PlotPropertyCard) pc;
-                if (ppc != null && ppc.getColourType() == plotPropertyCard.getColourType() && ppc.getIsOwned() == false) {
-                    plotNo++;
-                }
-            }
-        }
-        return plotNo;
-    }
-
-    private int getOwnedPropertyNo(PropertyCard.PropertyType propertyType,ArrayList<PropertyCard> propertyCardList)
-    {
-        int propertyNo=0;
-        for (PropertyCard pc : propertyCardList) {
-            if (pc != null && pc.getPropertyType()==propertyType && pc.getIsOwned()==false)
-            {
-                propertyNo++;
-            }
-        }
-
-        return propertyNo;
-    }
-
     private boolean makePlotDecision(PlotPropertyCard plotPropertyCard, ArrayList<PropertyCard> propertyCardList)
     {
         decisionNo=0;
         entrepreneurship=generator.nextInt(2);
 
-
         if(!plotPropertyCard.getIsOwned() && playerCash>plotPropertyCard.getCost())
         {
+            decisionNo+=isPropertyOwned(plotPropertyCard, propertyCardList);
 
-            int plotNo=getOwnedPlotNoByColor(plotPropertyCard, propertyCardList);
-
-            if(plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.RED ||
-               plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.YELLOW ||
-               plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.BLUE ||
-               plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.GREEN)
-            {
-                if(plotNo==0)
-                    decisionNo+=2;
-                else
-                    decisionNo++;
-            }
-            else
-            {
-                if (plotNo == 0)
-                    decisionNo++;
-            }
             if(playerCash>plotPropertyCard.getCost()+plotPropertyCard.getCost()/2)
             {
                 decisionNo++;
+                if(getNoByColorAndPlayer(plotPropertyCard))
+                    return true;
             }
             if(playerLocation+10<39 && playerCash<plotPropertyCard.getCost()+plotPropertyCard.getCost()/2)
             {
@@ -226,7 +255,7 @@ public class AIPlayer extends Player {
                     plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.BROWN)
             {
 
-                decisionNo+=generator.nextInt(2);
+                decisionNo+=1;
             }
             if(4*turnNumber>20 && playerCash>plotPropertyCard.getCost())
             {
@@ -238,7 +267,7 @@ public class AIPlayer extends Player {
             }
             if(entrepreneurship==1)
             {
-                decisionNo+=3;
+                decisionNo+=2;
             }
 
         }
@@ -292,7 +321,7 @@ public class AIPlayer extends Player {
         }
 
         Integer randomDecision=generator.nextInt(2);
-        return decisionNo >= 3 || randomDecision == 1 && decisionNo == 2;
+        return decisionNo > 2 || randomDecision == 1;
     }
 
     private Boolean makeUtilityDecision(UtilityPropertyCard utilityPropertyCard, ArrayList<PropertyCard> propertyCardList)
@@ -333,7 +362,7 @@ public class AIPlayer extends Player {
         }
 
         Integer randomDecision=generator.nextInt(2);
-        return decisionNo >= 3 || randomDecision == 1 && decisionNo == 2;
+        return decisionNo >= 4 || randomDecision == 1 && decisionNo == 3;
     }
 
     public PlotPropertyCard.Colour_Type makeHouseDecision(ArrayList<PropertyCard> propertyCardList)
@@ -405,7 +434,7 @@ public class AIPlayer extends Player {
 
     }
 
-    public PlotPropertyCard.Colour_Type makeHotelDecision()      //ez!!!!!!!!!!!!!!!!!!!!!!! (ez mi?:D) (ez már nem tudom mi :D)
+    public PlotPropertyCard.Colour_Type makeHotelDecision()
     {
         decisionNo=0;
         entrepreneurship=generator.nextInt(2);
@@ -441,4 +470,42 @@ public class AIPlayer extends Player {
         return null;
     }
 
+    public PropertyCard makePawnDecision()
+    {
+        for(PropertyCard pc: playerPropertyList) {
+            if (pc != null && pc.getPropertyType() == PropertyCard.PropertyType.UTILITY) {
+                return pc;
+            }
+        }
+        for(PropertyCard pc: playerPropertyList) {
+            if (pc != null && pc.getPropertyType() == PropertyCard.PropertyType.RAILING) {
+                return pc;
+            }
+        }
+        for(PropertyCard pc: playerPropertyList) {
+            if (pc != null && pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE) {
+                PlotPropertyCard plotPropertyCard = (PlotPropertyCard) pc;
+                if (plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.PURPLE ||
+                        plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.LIGHT_BLUE ||
+                        plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.ORANGE ||
+                        plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.BROWN) {
+                    return pc;
+                }
+            }
+        }
+        for(PropertyCard pc: playerPropertyList) {
+            if(pc!=null && pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE) {
+                PlotPropertyCard plotPropertyCard = (PlotPropertyCard) pc;
+                if(plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.BLUE ||
+                   plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.RED ||
+                   plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.YELLOW ||
+                   plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.GREEN )
+                {
+                    return pc;
+                }
+            }
+
+        }
+        return null;
+    }
 }
