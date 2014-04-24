@@ -522,4 +522,43 @@ public class AIPlayer extends Player {
             }
         return false;
     }
+    //*******************************************************************
+    public PropertyCard getPropertyBack(ArrayList<PropertyCard> pawns)
+    {
+        for(PropertyCard pc: pawns) {
+            if (pc != null && pc.getPropertyType() == PropertyCard.PropertyType.UTILITY) {
+                return pc;
+            }
+        }
+        for(PropertyCard pc: pawns) {
+            if (pc != null && pc.getPropertyType() == PropertyCard.PropertyType.RAILING) {
+                return pc;
+            }
+        }
+        for(PropertyCard pc: pawns) {
+            if (pc != null && pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE) {
+                PlotPropertyCard plotPropertyCard = (PlotPropertyCard) pc;
+                if (plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.PURPLE ||
+                        plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.LIGHT_BLUE ||
+                        plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.ORANGE ||
+                        plotPropertyCard.getColourType() == PlotPropertyCard.Colour_Type.BROWN) {
+                    return pc;
+                }
+            }
+        }
+        for(PropertyCard pc: pawns) {
+            if(pc!=null && pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE) {
+                PlotPropertyCard plotPropertyCard = (PlotPropertyCard) pc;
+                if(plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.BLUE ||
+                        plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.RED ||
+                        plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.YELLOW ||
+                        plotPropertyCard.getColourType()== PlotPropertyCard.Colour_Type.GREEN )
+                {
+                    return pc;
+                }
+            }
+
+        }
+        return null;
+    }
 }

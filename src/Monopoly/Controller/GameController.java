@@ -150,6 +150,7 @@ public class GameController {
 			{
 				buyHouseAIPlayer();
                 buyHotelAIPlayer();
+
 			}
 
 			Integer prevPlace=playerList.get(getPlayerCounter_CheckForOrderValidity()).getCurrentPlace();
@@ -627,7 +628,9 @@ public class GameController {
     }
     private void buyHouseAIPlayer()  {   
         AIPlayer aiPlayer= (AIPlayer) playerList.get(getPlayerCounter_CheckForOrderValidity());
+
         PlotPropertyCard.Colour_Type colour_type=aiPlayer.makeHouseDecision(getPropertyCardList());
+
 
         buyHousePlayer(colour_type,false);
     }
@@ -973,6 +976,19 @@ public class GameController {
         {
             playerList.get(playerId).movePawnBackToProperty(pc);
             playerList.get(playerId).setPlayerCash(-(int)(pc.getMortgageValue() * 1.1));
+        }
+    }
+    //****************************************************
+    public void buyBackFromPawnAI(Player player)
+    {
+        AIPlayer aiPlayer=(AIPlayer)player;
+        if(aiPlayer!=null) {
+            PropertyCard pc = aiPlayer.getPropertyBack(aiPlayer.getPawnList());
+            if (player.getPlayerCash() > (pc.getMortgageValue() * 1.1) && !aiPlayer.getPawnList().isEmpty())
+            {
+               aiPlayer.movePawnBackToProperty(pc);
+                aiPlayer.setPlayerCash(-(int)(pc.getMortgageValue() * 1.1));
+            }
         }
     }
     public boolean isPlayerHavePawn(Integer playerId)
