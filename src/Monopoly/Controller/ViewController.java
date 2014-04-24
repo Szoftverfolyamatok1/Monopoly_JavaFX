@@ -1011,13 +1011,14 @@ public class ViewController {
 
     private void showPlayerProperty(Integer playerNo)
     {
+        final Integer currentPlayerNo = playerNo;
         ArrayList<PropertyCard> playersProperties = game.getPlayerPropertyCards(playerNo);
         Stage st = new Stage();
         Pane propertiesWindowPane = new Pane();
         propertiesWindowPane.setPrefSize(800,700);
         st.setScene(new Scene(propertiesWindowPane,800,700));
         st.setTitle(game.getPlayerName(playerNo) + " Területei:");
-        int i = 0;
+        int i = 1;
 
         for (PropertyCard pc : playersProperties)
         {
@@ -1063,7 +1064,80 @@ public class ViewController {
             propertiesWindowPane.getChildren().add(p);
             i++;
         }
+        Button pawnButton = new Button("Zálogok");
+        pawnButton.setPrefSize(126,30);
+        pawnButton.setId("propbutton");
+        pawnButton.relocate(0, 0);
+        pawnButton.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                showPawnWindow(currentPlayerNo);
+            }
+        });
+        //if (game.isPlayerHavePawn(currentPlayerNo)) pawnButton.setDisable(false);
+        propertiesWindowPane.getChildren().add(pawnButton);
         st.show();
+    }
+
+    private void showPawnWindow(Integer playerNo) {
+        ArrayList<PropertyCard> playersPawns = game.getPlayerPawnCards(playerNo);
+        Stage st = new Stage();
+        Pane propertiesWindowPane = new Pane();
+        propertiesWindowPane.setPrefSize(800,700);
+        st.setScene(new Scene(propertiesWindowPane,800,700));
+        st.setTitle(game.getPlayerName(playerNo) + " Zálogai:");
+        int i = 1;
+
+        for (PropertyCard pc : playersPawns)
+        {
+            final String currentCardName = pc.getCardName();
+            Pane p = new Pane();
+            p.setStyle("-fx-background-color: grey");
+            p.setMaxSize(130,200);
+            p.setPrefSize(130,200);
+            Pane colorPane = new Pane();
+            colorPane.setStyle("-fx-background-color: white");
+            colorPane.setPrefSize(126,30);
+            colorPane.relocate(2,2);
+            if (pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE)
+            {
+                colorPane.setStyle("-fx-background-color: " + ((PlotPropertyCard)pc).getColorTypeString());
+                colorPane.setPrefSize(128,32);
+                colorPane.relocate(1,1);
+            }
+            if (playerNo == 0)
+            {
+                //Zálogból kivétel button-ja
+                Button zalogButton = new Button("Zálogból visszavesz!");
+                zalogButton.setPrefSize(126,15);
+                zalogButton.setStyle("-fx-background-color: yellow;");
+                zalogButton.relocate(2,100);
+                zalogButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
+                        new EventHandler<MouseEvent>() {
+                            @Override
+                            public void handle(MouseEvent mouseEvent) {
+
+                                buyBackFromPawnHuman(currentCardName);
+                            }
+                        });
+
+                p.getChildren().add(zalogButton);
+            }
+
+            p.getChildren().add(colorPane);
+            Label pCardName = new Label(pc.getCardName());
+            pCardName.setStyle("-fx-font: bold 12pt Arial");
+            pCardName.relocate(2,40);
+            p.getChildren().add(pCardName);
+            p.relocate((i % 5) * 135,(i / 5) * 215);
+            propertiesWindowPane.getChildren().add(p);
+            i++;
+        }
+        st.show();
+    }
+
+    private void buyBackFromPawnHuman(String currentCardName) {
+        game.buyBackFromPawn(game.getPropertyCardByName(currentCardName),0);
     }
 
     private void BuildWindow()

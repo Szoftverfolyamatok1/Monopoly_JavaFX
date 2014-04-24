@@ -111,7 +111,11 @@ public class Bank {
     public int getBankMoney() {
 		return bankMoney;
 	}
-
+    public void takeHouseFromPlayer(Player player, PlotPropertyCard plotPropertyCard,int no)
+    {
+        bankMoney+=plotPropertyCard.getHouseCost()*no;
+        player.setPlayerCash(+(plotPropertyCard.getHouseCost()*no));
+    }
     public void giveHouseToPlayer(Player player, PlotPropertyCard plotPropertyCard,int no)
     {
         if( player.getPlayerCash() >= plotPropertyCard.getHouseCost()*no)
@@ -169,7 +173,11 @@ public class Bank {
             bankMoney+=propertyCard.getHotelCost()*no;
         }
     }
-
+    public void takeHotelFromPlayer(Player player, PlotPropertyCard propertyCard, Integer no)
+    {
+        player.setPlayerCash(+propertyCard.getHotelCost()*no);
+        bankMoney+=propertyCard.getHotelCost()*no;
+    }
     public ArrayList<PropertyCard> getPropertyCardList()
     {
         return propertyCardList;

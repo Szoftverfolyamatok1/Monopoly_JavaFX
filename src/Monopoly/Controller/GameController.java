@@ -10,12 +10,18 @@ import Monopoly.Model.Players.HumanPlayer;
 import Monopoly.Model.Players.Player;
 import Monopoly.Model.XML.XMLParser;
 import Monopoly.Model.XML.XMLWriter;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Pair;
 import java.util.ArrayList;
 import java.util.Random;
@@ -37,7 +43,7 @@ public class GameController {
     private String lastChanceCard,lastCommunityCard;
 	private int playerCounter;
     private Integer playerWhoThrown;
-
+    private PropertyCard pawnPc;
 	public void initialize()
     {
         boardElement = new BoardElement();
@@ -219,10 +225,122 @@ public class GameController {
 	}
 
 	private void checkIfPlayerLost(Integer currentPlayer) {
-		if ( playerList.get(currentPlayer).getPlayerCash() <= 0 )
+		while ( playerList.get(currentPlayer).getPlayerCash() <= 0 && playerList.get(currentPlayer).isPlayerHasProperty())
 		{
-			playerList.get(currentPlayer).isInGame = false;
+            if (currentPlayer != 0) //AI zálog része
+            {
+                PropertyCard pc =((AIPlayer) playerList.get(currentPlayer)).makePawnDecision();
+                if (pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE)
+                {
+                    if (((PlotPropertyCard)pc).getHasHotel())
+                        sellHotelPlayer(((PlotPropertyCard) pc).getColourType(), false);
+                    while (((PlotPropertyCard)pc).getHouseNo() > 0 && playerList.get(currentPlayer).getPlayerCash() <= 0)
+                    {
+                        sellHouseFromPlayer(((PlotPropertyCard) pc).getColourType(), false);
+
+                    }
+                }
+                if (playerList.get(currentPlayer).getPlayerCash() <= 0)
+                {
+                    playerList.get(currentPlayer).setPlayerCash(+(pc.getMortgageValue()));
+                    playerList.get(currentPlayer).movePropertyToPawn(pc);
+                }
+            }
+            else                    //Human játékos AI része
+            {
+                ArrayList<PropertyCard> playersProperties = getPlayerPropertyCards(currentPlayer);
+                final Stage st = new Stage();
+                Pane propertiesWindowPane = new Pane();
+                propertiesWindowPane.setPrefSize(800,700);
+                st.setScene(new Scene(propertiesWindowPane,800,700));
+                st.setTitle(getPlayerName(currentPlayer) + " Területei:      Tartozás:" + playerList.get(currentPlayer).getPlayerCash());
+                st.initModality(Modality.APPLICATION_MODAL);
+                st.initStyle(StageStyle.UTILITY);
+                int i = 0;
+
+                for (PropertyCard pc : playersProperties)
+                {
+                    final String currentCardName = pc.getCardName();
+                    Pane p = new Pane();
+                    p.setStyle("-fx-background-color: grey");
+                    p.setMaxSize(130,200);
+                    p.setPrefSize(130,200);
+                    Pane colorPane = new Pane();
+                    colorPane.setStyle("-fx-background-color: white");
+                    colorPane.setPrefSize(126,30);
+                    colorPane.relocate(2,2);
+                    if (pc.getPropertyType() == PropertyCard.PropertyType.SIMPLE)
+                    {
+                        colorPane.setStyle("-fx-background-color: " + ((PlotPropertyCard)pc).getColorTypeString());
+                        colorPane.setPrefSize(128,32);
+                        colorPane.relocate(1,1);
+                        if (((PlotPropertyCard)pc).getHasHotel())
+                        {
+                            Label ht = new Label("HOTEL");
+                            ht.setStyle("-fx-font: bold 16pt Arial");
+                            ht.relocate(30,7);
+                            colorPane.getChildren().add(ht);
+                        }
+                        else
+                        {
+                            for (int j = 0;j < ((PlotPropertyCard)pc).getHouseNo();j++)
+                            {
+                                Button houseButton = new Button();
+                                houseButton.setPrefSize(10,10);
+                                houseButton.setStyle("-fx-background-color: yellow;");
+                                houseButton.relocate(j*25+5,5);
+                                colorPane.getChildren().add(houseButton);
+                            }
+                        }
+
+                    }
+                    p.getChildren().add(colorPane);
+                    Label pCardName = new Label(pc.getCardName());
+                    pCardName.setStyle("-fx-font: bold 12pt Arial");
+                    pCardName.relocate(2,40);
+                    p.getChildren().add(pCardName);
+
+                    //Zálogba adás button-ja
+                    Button zalogButton = new Button("Zálogba ad!");
+                    zalogButton.setPrefSize(126,15);
+                    zalogButton.setStyle("-fx-background-color: yellow;");
+                    zalogButton.relocate(2,100);
+                    zalogButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
+                            new EventHandler<MouseEvent>() {
+                                @Override
+                                public void handle(MouseEvent mouseEvent) {
+
+                                    setPawnPc(currentCardName);
+                                    st.close();
+                                }
+                            });
+                    p.getChildren().add(zalogButton);
+                    p.relocate((i % 5) * 135,(i / 5) * 215);
+                    propertiesWindowPane.getChildren().add(p);
+                    i++;
+                }
+                st.showAndWait();
+                doLog(Level.INFO, "Zálogba ad" + pawnPc.getCost().toString());
+                if (pawnPc.getPropertyType() == PropertyCard.PropertyType.SIMPLE)
+                    if (((PlotPropertyCard) pawnPc).getHasHotel())
+                        sellHotelPlayer(((PlotPropertyCard) pawnPc).getColourType(), true);
+
+                    while (((PlotPropertyCard)pawnPc).getHouseNo() > 0 && playerList.get(currentPlayer).getPlayerCash() <= 0)
+                    {
+                        sellHouseFromPlayer(((PlotPropertyCard) pawnPc).getColourType(), true);
+                    }
+
+                if (playerList.get(currentPlayer).getPlayerCash() <= 0)
+                {
+                    playerList.get(currentPlayer).setPlayerCash(+(pawnPc.getMortgageValue()));
+                    playerList.get(currentPlayer).movePropertyToPawn(pawnPc);
+                }
+            }
 		}
+        if (playerList.get(currentPlayer).getPlayerCash() <= 0)
+        {
+            playerList.get(currentPlayer).isInGame = false;
+        }
 	}
 
 	private Boolean checkGameOver()
@@ -247,7 +365,7 @@ public class GameController {
 			{
 				if(propertyCard.getPropertyType()==PropertyCard.PropertyType.SIMPLE)
 				{
-					if(((PlotPropertyCard) propertyCard).getHasHouse())
+					if(((PlotPropertyCard) propertyCard).getHouseNo() > 0 && !((PlotPropertyCard)propertyCard).getHasHotel())
 					{
 						if(((PlotPropertyCard)propertyCard).getHouseNo()==1)
 						{
@@ -421,17 +539,41 @@ public class GameController {
 		//return playerList.get(currentPlayer()).isPlayerOwnProperty(pc);
 		return playerList.get(currentPlayer()).getDoIHaveThisCard(pc);
 	}
+    public void sellHouseFromPlayer(PlotPropertyCard.Colour_Type ct, boolean isHuman){
+        if(ct!=null)
+        {
+            PlotPropertyCard propertyCard;
+            if (isHuman)
+                propertyCard= decreasePropertyHouseNumberByColour(ct,0);
+            else
+                propertyCard= decreasePropertyHouseNumberByColour(ct,getPlayerCounter_CheckForOrderValidity());
+            Integer no;
+            if(ct == PlotPropertyCard.Colour_Type.BROWN || ct == PlotPropertyCard.Colour_Type.BLUE)
+                no=2;
+            else
+                no=3;
 
+            if (isHuman)
+                bank.takeHouseFromPlayer(playerList.get(0), propertyCard, no);
+            else
+                bank.giveHouseToPlayer(playerList.get(getPlayerCounter_CheckForOrderValidity()), propertyCard, no);
+        }
+    }
     private void buyHousePlayer(PlotPropertyCard.Colour_Type colour_type, boolean isHumanBuys)
     {
         if(colour_type!=null)
         {
-            PlotPropertyCard propertyCard = getPropertyCardByColour(colour_type);
             Integer no;
             if(colour_type == PlotPropertyCard.Colour_Type.BROWN || colour_type == PlotPropertyCard.Colour_Type.BLUE)
                 no=2;
             else
                 no=3;
+            PlotPropertyCard propertyCard;
+            if (isHumanBuys)
+                propertyCard = getPropertyCardByColour(colour_type,0,no);
+            else
+                propertyCard = getPropertyCardByColour(colour_type,getPlayerCounter_CheckForOrderValidity(),no);
+
 
             if (isHumanBuys)
                 bank.giveHouseToPlayer(playerList.get(0), propertyCard, no);
@@ -444,18 +586,18 @@ public class GameController {
         }
     }
 
-    private PlotPropertyCard getPropertyCardByColour(PlotPropertyCard.Colour_Type colour_type)
+    private PlotPropertyCard getPropertyCardByColour(PlotPropertyCard.Colour_Type colour_type, Integer PlayerId, Integer houseNo)
     {
         PlotPropertyCard plotPropertyCard = null;
         PlotPropertyCard resultProperty = null;
-        for(PropertyCard pc : bank.propertyCardList)
+        for(PropertyCard pc : playerList.get(PlayerId).getPropertyList())
         {
             if(pc.getPropertyType()==PropertyCard.PropertyType.SIMPLE)
             {
                 plotPropertyCard=(PlotPropertyCard)pc;
                 if(plotPropertyCard.getColourType() == colour_type )
                 {
-                    if ( plotPropertyCard.getHouseNo() < 4 )
+                    if ( plotPropertyCard.getHouseNo() < 4 && (plotPropertyCard.getHouseCost() * houseNo) < playerList.get(PlayerId).getPlayerCash())
                         plotPropertyCard.increaseHouseNo();
                     resultProperty = plotPropertyCard;
                 }
@@ -464,6 +606,25 @@ public class GameController {
         return resultProperty;
     }
 
+    private PlotPropertyCard decreasePropertyHouseNumberByColour(PlotPropertyCard.Colour_Type colour_type, Integer PlayerId)
+    {
+        PlotPropertyCard plotPropertyCard = null;
+        PlotPropertyCard resultProperty = null;
+        for(PropertyCard pc : playerList.get(PlayerId).getPropertyList())
+        {
+            if(pc.getPropertyType()==PropertyCard.PropertyType.SIMPLE)
+            {
+                plotPropertyCard=(PlotPropertyCard)pc;
+                if(plotPropertyCard.getColourType() == colour_type )
+                {
+                    if ( plotPropertyCard.getHouseNo() > 0 )
+                        plotPropertyCard.decreaseHouseNo();
+                    resultProperty = plotPropertyCard;
+                }
+            }
+        }
+        return resultProperty;
+    }
     private void buyHouseAIPlayer()  {   
         AIPlayer aiPlayer= (AIPlayer) playerList.get(getPlayerCounter_CheckForOrderValidity());
         PlotPropertyCard.Colour_Type colour_type=aiPlayer.makeHouseDecision(getPropertyCardList());
@@ -477,7 +638,13 @@ public class GameController {
         if(colour_type!=null)
         {
             PlotPropertyCard propertyCard=null;
-            for(PropertyCard pc:bank.propertyCardList)
+            Integer playerId;
+            if (isHumanBuys)
+                playerId = 0;
+            else
+                playerId = getPlayerCounter_CheckForOrderValidity();
+
+            for(PropertyCard pc:playerList.get(playerId).getPropertyList())
             {
                 if(pc.getPropertyType()==PropertyCard.PropertyType.SIMPLE)
                 {
@@ -513,7 +680,54 @@ public class GameController {
             }
         }
     }
+    public void sellHotelPlayer(PlotPropertyCard.Colour_Type colour_type, boolean isHumanBuys)
+    {
+        Boolean canBuyMore=false;
+        if(colour_type!=null)
+        {
+            PlotPropertyCard propertyCard=null;
+            Integer playerId;
+            if (isHumanBuys)
+                playerId = 0;
+            else
+                playerId = getPlayerCounter_CheckForOrderValidity();
 
+            for(PropertyCard pc:playerList.get(playerId).getPropertyList())
+            {
+                if(pc.getPropertyType()==PropertyCard.PropertyType.SIMPLE)
+                {
+                    PlotPropertyCard plotPropertyCard=(PlotPropertyCard)pc;
+                    if(plotPropertyCard.getColourType()== colour_type )
+                    {
+                        if(plotPropertyCard.getHasHotel())
+                        {
+                            plotPropertyCard.setHasHotel(false);
+                            canBuyMore=true;
+                        }
+                        propertyCard=plotPropertyCard;
+                    }
+                }
+            }
+
+            if(propertyCard!=null)
+            {
+                Integer no;
+                if(colour_type== PlotPropertyCard.Colour_Type.BROWN || colour_type== PlotPropertyCard.Colour_Type.BLUE)
+                    no=2;
+                else
+                    no=3;
+
+                if(canBuyMore)
+                {
+                    if (isHumanBuys)
+                        bank.takeHotelFromPlayer(playerList.get(0), propertyCard, no);
+                    else
+                        bank.takeHotelFromPlayer(playerList.get(getPlayerCounter_CheckForOrderValidity()), propertyCard, no);
+                    doLog(Level.INFO, "Hotelt eladott a " + colour_type + " színű mezőre");
+                }
+            }
+        }
+    }
     private boolean canBuyHotel(PlotPropertyCard propertyCard)
     {
         return playerList.get(getPlayerCounter_CheckForOrderValidity()).getPlayerCash() > propertyCard.getHotelCost();
@@ -649,7 +863,10 @@ public class GameController {
     {
         return playerList.get(playerId).getPropertyList();
     }
-
+    public ArrayList<PropertyCard> getPlayerPawnCards(Integer playerId)
+    {
+        return playerList.get(playerId).getPawnList();
+    }
     public boolean buyPropertyForPlayer(String propertyName)
     {
         if (playerList.get(0).getPlayerCash() >= bank.getPropertyByName(propertyName).getCost())
@@ -745,5 +962,21 @@ public class GameController {
     public ArrayList<PropertyCard> getPropertyCardList()
     {
         return bank.getPropertyCardList();
+    }
+    private void setPawnPc(String name)
+    {
+        pawnPc = getPropertyCardByName(name);
+    }
+    public void buyBackFromPawn(PropertyCard pc, Integer playerId)
+    {
+        if (playerList.get(playerId).getPlayerCash() > (pc.getMortgageValue() * 1.1))
+        {
+            playerList.get(playerId).movePawnBackToProperty(pc);
+            playerList.get(playerId).setPlayerCash(-(int)(pc.getMortgageValue() * 1.1));
+        }
+    }
+    public boolean isPlayerHavePawn(Integer playerId)
+    {
+        return !(playerList.get(playerId).getPawnList().isEmpty());
     }
 }

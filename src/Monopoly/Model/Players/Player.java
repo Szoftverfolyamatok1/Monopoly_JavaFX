@@ -34,6 +34,7 @@ public abstract class Player {
 
 	protected ArrayList<Card> playerCardList;
 	protected ArrayList<PropertyCard> playerPropertyList;
+    protected ArrayList<PropertyCard> playerPawnList;
 
     public abstract boolean step(PropertyCard propertyCard,Player player, ArrayList<PropertyCard> propertyCardList); //I think it will need few parameters
 
@@ -54,6 +55,7 @@ public abstract class Player {
 		this.playerCash = 0;
 		this.playerLocation = 0;
 		this.playerPropertyList = new ArrayList<PropertyCard>();
+        this.playerPawnList = new ArrayList<PropertyCard>();
 		this.playerCardList = new ArrayList<Card>();
 		this.isPlayerInJail = false;
 		this.canPlayerThrowOneMore = false;
@@ -233,6 +235,14 @@ public abstract class Player {
 		this.playerPropertyList.add(card);
 	}
 
+    public void movePropertyToPawn(PropertyCard card){
+        this.playerPropertyList.remove(card);
+        this.playerPawnList.add(card);
+    }
+    public void movePawnBackToProperty(PropertyCard card){
+        this.playerPawnList.remove(card);
+        this.playerPropertyList.add(card);
+    }
     //this might be useful for future features
 //	public void removePropertyFromPlayer(PropertyCard card)
 //	{
@@ -274,4 +284,12 @@ public abstract class Player {
 	{
 		playerLocation=location;
 	}
+    public boolean isPlayerHasProperty()
+    {
+        return playerPropertyList.size() > 0;
+    }
+
+    public ArrayList<PropertyCard> getPawnList() {
+        return playerPawnList;
+    }
 }

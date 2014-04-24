@@ -121,7 +121,10 @@ public class PlotPropertyCard extends PropertyCard {
     {
         houseNo++;
     }
-
+    public void decreaseHouseNo()
+    {
+        houseNo--;
+    }
 	public String getColorTypeString(){
 		switch (colourType)
 		{

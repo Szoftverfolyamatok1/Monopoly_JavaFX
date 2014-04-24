@@ -165,7 +165,7 @@ public class AIPlayer extends Player {
             payToPlayer(player, propertyCard.getRentalValueNoHouses());
         }
 
-        if (propertyCard.getHasHouse()) {
+        if (propertyCard.getHouseNo() > 0 && !propertyCard.getHasHotel()) {
 
             if (propertyCard.getHouseNo() == 1) {
                 payToPlayer(player, propertyCard.getRentalValueOneHouse());
